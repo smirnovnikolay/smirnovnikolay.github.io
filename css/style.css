@@ -1,0 +1,38 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+
+.mockup {
+margin-bottom: 30px;
+}
+.mockup img {
+	width: 100%;
+	border: 1px solid transparent;
+}
+.mockup a {
+	color: black;
+	text-decoration: none;
+}
+.mockup a:hover{
+	color: black;
+	text-decoration: underline;
+}
+.mockup img:hover {
+	border: 1px solid #80bdff;
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25)
+}

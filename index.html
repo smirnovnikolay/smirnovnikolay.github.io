@@ -1,53 +1,96 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Привет, меня зовут Николай и я Веб-разработчик</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap-grid.min.css">	
+	<link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
-	<div class="container">
-		<h1>Привет, меня зовут Николай и я Веб-разработчик</h1>
-		<p>Это мое пока что небольшое портфолио</p><br>
-		<h2>PSD to HTML</h2>
-		<div class="row">
-			<div class="col-12 col-md-4">
-				
-				<div class="mockup">
-					<a href="https://smirnovnikolay.github.io/cardboard/">
-						<h3>Добрый картон</h3>
-						<img src="img/mockup2.jpg">
-					</a>
-				</div>
-				
+	
+	<header class="sidebar">
+		<div class="sidebar-img">
+			<!-- Так же есть решение бэкраундем -->
+			<img src="img/CgTX9xvajfw.jpg">
+		</div>	
+		<ul class="sidebar-nav">
+			<li><a href="#">about</a></li>
+			<li><a href="#projects">projects</a></li>
+			<li><a href="#contact">contact</a></li>
+		</ul>
+		<div class="sidebar-info">
+			<div class="sidebar-photo"></div>
+			<div class="sidebar-name">
+				<h1>Smirnov Nikolay</h1>
+				<h3>Front-end developer / Web designer</h3>
 			</div>
-			<div class="col-12 col-md-4">
-				
-				<div class="mockup">
-					<a href="https://smirnovnikolay.github.io/creativia/">
-						<h3>Creativia</h3>
-						<img src="img/mockup-creativia.jpg">
-					</a>
-				</div>
-				
-			</div>
-			<div class="col-12 col-md-4">
-				
-				<div class="mockup">
-					<a href="https://smirnovnikolay.github.io/Yebo/">
-						<h3>Yebo</h3>
-						<img src="img/mockup-yebo.jpg">
-					</a>	
-				</div>
-				
-			</div>
+			<div class="sidebar-prof"></div>
+
 		</div>
+		<a href="#" class="scroll-icon"></a>
+	</header>
+	<main>
+		<div class="dashboard-container">
+			<h2 id="projects"> Project </h2>
+			<ul class="dashboard-sub-menu">
+				<li><a href="#">PSD to HTML</a></li>
+				<li><a href="#"><s>Fullstack</s></a></li>
+				<li><a href="#"><s>Design</s></a></li>
+			</ul>
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+					<div class="card-container">
+						<a href="/cardboard">
+							<img src="img/cardboard.jpg">
+						</a>
+						<div class="card-text"><h4>Cardboard</h4></div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+					<div class="card-container">
+						<a href="creativia">
+							<img src="img/creativia.jpg">
+						</a>
+						<div class="card-text"><h4>Creativia</h4></div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+					<div class="card-container">
+						<a href="Yebo">
+							<img src="img/yebo.jpg">
+						</a>
+						<div class="card-text"><h4>Yebo</h4></div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</main>
+	<footer class="footer">
+		<h2 id="contact">Contact</h2>
+		<div class="social">
+			<a href="https://vk.com/id180651194" alt="vk"><img src="img/social-icon-vk.png"></a>
+			<a href="" alt="inst"><img src="img/social-icon-inst.png"></a>
+			<a href="https://api.whatsapp.com/send?phone=79147258757" alt="whatsapp"><img src="img/social-icon-whatsapp.png"></a>
+		</div>
+		<div class="email"><a href="mailto:mrrblaack@gmail.com">mrrblaack@gmail.com</a></div>
+	</footer>
+
+	
+	<script type="text/javascript">
 		
-		
-		
-	</div>
+		function parallax(event){
+			let halfWidth = this.querySelector('.sidebar').offsetWidth/2;
+			let halfHeight = this.querySelector('.sidebar').offsetHeight/2;
+
+			let myvar = (halfWidth/50) ;
+
+			this.querySelector('.sidebar-img').style.transform = 'translate('+(((event.clientX/myvar)/10))+'px,'+(((event.clientY/myvar)/10))+'px'+')';
+			console.log(this.querySelector('.sidebar-img').style.transform = 'translate('+(((event.clientX/myvar)/5))+'px,'+(((event.clientY/myvar)/5))+'px'+')');
+			this.querySelector('.sidebar-name').style.transform = 'rotateY('+((event.clientX-halfWidth)/80)+'deg)';
+		}
+		document.addEventListener('mousemove', parallax);
+	</script>
 </body>
 </html>

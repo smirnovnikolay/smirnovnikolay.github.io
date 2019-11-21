@@ -249,7 +249,7 @@ a {
     background-color: #ffffff;
     position: absolute;
     z-index: 100;
-    display: none;
+    /*display: none;*/
     right: -4px;
     top: -webkit-calc(100% + 16px);
     top: -moz-calc(100% + 16px);

@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery.responsiveTabs.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/slick.js"></script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header class="header">
+		<div class="header__wrap">
+			<div class="header__up">
+				<div class="container">	
+					<div class="upper">
+						<div class="upper__left">
+							<div class="upper__humburger">
+								<div class="upper__humburger_wrap">
+	                                <span></span>
+	                                <span></span>
+	                                <span></span>
+                                </div>
+                            </div>
+							<div class="upper__phone">0 800 334 2201</div>
+							<div class="upper__callback">
+								<a href="">
+									<span>Перезвони мне</span>
+									<div class="upper__img">
+										<img src="img/icon_phone.png" alt="phone">
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="upper__logo">
+							<a href="#">
+								<img src="img/logo.png" alt="Diadema">
+							</a>
+						</div>
+						<div class="upper__right">
+							<div class="upper-basket">
+								<a href="">
+									<div class="upper-basket__img no-null">
+										<img src="img/shopping-bag.svg" alt="Корзина">
+									</div>
+									<div class="upper-basket__text">
+										<span>Корзина</span>
+										<span>1 товар</span>
+									</div>
+								</a>
+								<div class="stash__pop" data-role="basket-item-list">
+									<div class="stash__container">
+										<div class="stash__item">
+											<div class="stash__img">
+													<img src="img/mini_item.png" alt=""> 
+											</div>
+											<div class="stash__about">
+												<p>Серебряные серьги "Жемчужинки"</p>
+												<div class="bx-basket-item-list-item-remove" onclick="" title="Удалить"></div>
+												<div class="stash__price">
+													<div class="bx-basket-item-list-item-price">
+														<strong>560 грн.</strong>
+														<span>1 шт</span>
+
+													</div>
+							
+													<div class="bx-basket-item-list-item-price-old">680 грн.</div>
+												</div>
+											</div>
+										</div>
+										<div class="stash__item">
+											<div class="stash__img">
+													<img src="img/mini_item.png" alt=""> 
+											</div>
+											<div class="stash__about">
+												<p>Серебряные серьги "Жемчужинки"</p>
+												<div class="bx-basket-item-list-item-remove" onclick="" title="Удалить"></div>
+												<div class="stash__price">
+													<div class="bx-basket-item-list-item-price">
+														<strong>560 грн.</strong>
+														<span>1 шт</span>
+
+													</div>
+							
+													<div class="bx-basket-item-list-item-price-old">680 грн.</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="stash__total">
+										<div class="stash__summary">
+											<p><b>Итого: 560 грн.</b></p>
+										</div>
+										<a href="/basket/" class="btn btn--stash">В корзину</a>
+									</div>
+								</div>											
+							</div>
+							
+							<div class="upper-favorites">
+								<div class="upper-favorites__img">
+									<img src="img/upper-favorites__icon.png" alt="Избраное">
+								</div>
+								<div class="upper-favorites__text">
+									<span>Избраное</span>
+									<span class="null">0 товаров</span>
+								</div>
+							</div>
+						</div>
+					</div>			
+				</div>
+			</div>
+			<div class="menu__wrapper">
+				<div class="container">	
+					<div class="menu">
+						<div class="menu__info-block">
+							<div class="menu__info-block--phone"><a href=""><img src="img/icon_phone.png"><span>0 800 334 2201</span></a></div>
+							<div class="menu__info-block--time-work">Пн-Сб: с 9-19.00 / Вск: выходной</div>
+						</div>
+						<div class="menu__name"><span>Каталог</span></div>
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a>Кольца</a>
+								<div class="sub-menu__wrap">
+									<div class="sub-menu__name"><span>Кольца</span></div>
+									<ul class="sub-menu">
+									<li class="sub-menu__item">
+										<a href="">
+											<img src="img/sub-menu-img1.jpg">
+											<span>Кольца с камнями</span>
+										</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="">
+											<img src="img/sub-menu-img2.jpg">
+											<span>Кольца с камнями</span>
+										</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="">
+											<img src="">
+											<span>Кольза без камней</span>
+										</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="">
+											<img src="">
+											<span>Кольца с камнями</span>
+										</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="">
+											<img src="">
+											<span>Кольза без камней</span>
+										</a>
+									</li>
+									</ul>
+								</div>
+							</li>
+
+							<li class="menu__item"><a href="">Серьги</a></li>
+							<li class="menu__item"><a href="">Цепочки</a></li>
+							<li class="menu__item"><a href="">Браслеты</a></li>
+							<li class="menu__item"><a href="">Колье</a></li>
+						
+						</ul>
+						<div class="menu__close">
+							<div class="menu__close--wrap">
+								<span></span>
+								<span></span>
+							</div>										
+						</div>
+					</div>			
+				</div>
+			</div>
+
+		</div>
+	</header>
+	<section class="offer">
+		<div class="offer__wrap">
+			<div class="container">	
+				<div class="offer__inner">
+					<div class="offer__text">В честь открытия<br>магазина скидки<br>до 25%</div>
+					<a class="btn offer__btn">Посмотреть</a>
+				</div>
+		</div>
+	</section>
+	<section class="popular-goods">
+		<div class="popular-goods__wrap">
+			<div class="container">
+				<div class="popular-goods__inner">
+					<div class="title popular-goods__title">Популярные товары</div>
+					<div class="popular-goods__items">
+						<div class="popular-goods__item">
+							<div class="popular-goods-item__wrap">
+								<div class="popular-goods-item__img">
+									<img src="img/popular-goods-item__img1.png" alt="Серьги">
+								</div>	
+								<div class="popular-goods-item__btn">
+									<a href="">
+										<span>Серьги</span>
+									</a>
+								</div>
+							</div>	
+						</div>	
+						<div class="popular-goods__item">
+							<div class="popular-goods-item__wrap">
+								<div class="popular-goods-item__img">
+									<img src="img/popular-goods-item__img1.png" alt="Серьги">
+								</div>	
+								<div class="popular-goods-item__btn">
+									<a href="">
+										<span>Браслеты</span>
+									</a>
+								</div>
+							</div>	
+						</div>
+						<div class="popular-goods__item">
+							<div class="popular-goods-item__wrap">
+								<div class="popular-goods-item__img">
+									<img src="img/popular-goods-item__img1.png" alt="Серьги">
+								</div>	
+								<div class="popular-goods-item__btn">
+									<a href="">
+										<span>Подвески</span>
+									</a>
+								</div>
+							</div>	
+						</div>		
+						<div class="popular-goods__item">
+							<div class="popular-goods-item__wrap">
+								<div class="popular-goods-item__img">
+									<img src="img/popular-goods-item__img1.png" alt="Серьги">
+								</div>	
+								<div class="popular-goods-item__btn">
+									<a href="">
+										<span>Серьги</span>
+									</a>
+								</div>
+							</div>	
+						</div>	
+					
+					</div>
+					<div class="popular-goods__more">
+						<a href="#">Посмотреть еще товары</a>
+					</div>
+				</div>
+				<!-- /.popular-goods__inner -->
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.popular-goods__wrap -->
+	</section>
+	<!-- /.popular-goods -->
+
+	<section class="posts-inst">
+		<div class="posts-inst__wrap">
+			<div class="container">
+				<div class="posts-inst__inner">
+					<div class="posts-inst__up">
+						<div class="title posts-inst__title">Публикуем новые модели и специальные<br>предложения в Instagram</div>
+						<!-- /.title posts-inst__title -->
+						<div class="posts-inst__name-inst"><a href=""><span>@DIADEMA</span></a></div>
+						<!-- /.posts-inst__name-inst -->
+					</div>
+					<!-- /.posts-inst__up -->
+					<div class="posts-inst__content">
+						<div class="posts-inst__items">
+							<div class="posts-inst__item"><a href=""><img src="img/inst-photo-1.jpg"></a></div>
+							<div class="posts-inst__item"><a href=""><img src="img/inst-photo-2.jpg"></a></div>
+							<div class="posts-inst__item"><a href=""><img src="img/inst-photo-3.jpg"></a></div>
+							<div class="posts-inst__item"><a href=""><img src="img/inst-photo-4.jpg"></a></div>
+							<div class="posts-inst__item"><a href=""><img src="img/inst-photo-5.jpg"></a></div>
+							<div class="posts-inst__item"><a href=""><img src="img/inst-photo-6.jpg"></a></div>
+							<div class="posts-inst__item"><a href=""><img src="img/inst-photo-7.jpg"></a></div>
+							<div class="posts-inst__item"><a href=""><img src="img/inst-photo-8.jpg"></a></div>
+						</div>
+
+					</div>
+					<!-- /.posts-inst__content -->
+				</div>
+				<!-- /.posts-inst__inner -->
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.posts-inst__wrap -->
+	</section>
+	<!-- /.posts-inst -->
+
+ 	<section class="advantage">
+ 		<div class="advantage__wrap">
+ 			<div class="container">
+ 				<div class="advantage__inner">
+ 					<div class="title advantage__title">Выгоды работы с нами</div>
+ 					<!-- /.title advantage__title -->
+ 					<div class="advantage__items">
+ 						<div class="advantage__item">
+ 							<div class="advantage-item__img"><img src="img/icon_1.png"></div>
+ 							<!-- /.advantage-item__img -->
+ 							<div class="advantage-item__text">
+ 								Компания производитель
+							</div>
+ 							<!-- /.advantage-item__text -->
+ 						</div>
+ 						<!-- /.advantage__item -->
+ 						<div class="advantage__item">
+ 							<div class="advantage-item__img"><img src="img/shopping-bag.png"></div>
+ 							<!-- /.advantage-item__img -->
+ 							<div class="advantage-item__text">
+ 								Обмен в течение двух недель  
+							</div>
+ 							<!-- /.advantage-item__text -->
+ 						</div>
+ 						<!-- /.advantage__item -->
+ 						<div class="advantage__item">
+ 							<div class="advantage-item__img"><img src="img/icon_4.png"></div>
+ 							<!-- /.advantage-item__img -->
+ 							<div class="advantage-item__text">
+ 								Пожизненная гарантия качества
+							</div>
+ 							<!-- /.advantage-item__text -->
+ 						</div>
+ 						<!-- /.advantage__item -->
+ 						<div class="advantage__item">
+ 							<div class="advantage-item__img"><img src="img/icon_5.png"></div>
+ 							<!-- /.advantage-item__img -->
+ 							<div class="advantage-item__text">
+ 								Дешевле на 20%, чем в рознице
+							</div>
+ 							<!-- /.advantage-item__text -->
+ 						</div>
+ 						<!-- /.advantage__item -->
+ 						<div class="advantage__item">
+ 							<div class="advantage-item__img"><img src="img/icon_1.png"></div>
+ 							<!-- /.advantage-item__img -->
+ 							<div class="advantage-item__text">
+ 								Компания производитель
+							</div>
+ 							<!-- /.advantage-item__text -->
+ 						</div>
+ 						<!-- /.advantage__item -->
+ 					</div>
+ 					<!-- /.advantage__items -->
+ 				</div>
+ 				<!-- /.advantage__inner -->
+ 			</div>
+ 			<!-- /.container -->
+ 		</div>
+ 		<!-- /.advantage__wrap -->
+ 	</section>
+ 	<!-- /.advantage -->
+
+ 	<footer class="footer">
+ 		<div class="footer__wrap">
+ 			<div class="container">
+ 				<div class="footer__inner">
+ 					<div class="footer__blocks">
+	 					<div class="footer__logo"><a href=""><img src="img/logo.png"></a></div>
+	 					<!-- /.footer__logo -->
+	 					<div class="footer__section">
+	 						<div class="footer__title">Разделы:</div>
+							<span><a href="">Популярные товары</a></span>
+							<span><a href="">Фото из инстаграм</a></span>
+							<span><a href="">Выгоды работы</a></span>
+
+	 					</div>
+	 					<!-- /.footer__section -->
+	 					<div class="footer__order">
+	 						<div class="footer__title">Заказы:</div>
+	 					<span><a href="">Карзина</a></span>
+	 						<span><a href="">Избраное</a></span>
+	 					</div>
+	 					<!-- /.footer__order -->
+	 					<div class="footer__contact">
+	 						<div class="footer__title">Приём звонков:</div>
+	 						<span><b>0 800 334 2201</b></span>
+	 						<span>Пн-Сб: с 9-19.00<br>Вск: выходной</span>
+	 					</div>
+	 					<!-- /.footer__contact -->
+	 					<div class="footer__feedback">
+	 						<div class="footer__callback">
+	 							<a class="btn btn-o">Перезвоните мне</a>
+	 						</div>
+	 						<!-- /.footer__callback -->
+	 						<div class="footer__social">
+	 							<a href=""><div><img src="img/facebook-icon.png"></div></a>
+	 							<a href=""><div><img src="img/inst-icon.png"></div></a>
+	 						</div>
+	 						<!-- /.footer__social -->
+	 					</div>
+	 					<!-- /.footer__feedback -->
+ 					</div>
+ 					<div class="footer__down">
+ 						<div class="copyright">1995 - 2018 | Diadema - Jewellery & Diamonds. Все права защищены.</div>
+ 						<div class="policy"><a href="">Политика конфидициальности</a></div>
+ 					</div>
+ 				</div>
+ 				<!-- /.footer__inner -->
+ 			</div>
+ 			<!-- /.container -->
+ 		</div>
+ 		<!-- /.footer__wrap -->
+ 	</footer>
+ 	<!-- /.footer -->
+
+
+
+
+<script type="text/javascript">
+	$(document).ready(function(e){
+        e.preventDefault
+
+        // menu 
+        $('.upper__humburger').on("click", function(){
+          $('.menu__wrapper').toggleClass('active');
+          $('body').addClass('no-scroll');
+         
+        });
+        $('.menu__close').on("click", function(){
+          $('.menu__wrapper').toggleClass('active');       
+          $('body').removeClass('no-scroll');
+        });
+     
+        $('.menu__item a').on("click", function(){
+          $('.menu').addClass('active');
+          
+          $(this).parent().addClass('active');
+        });
+
+         $('.sub-menu__name').on("click", function(){
+          $('.menu').removeClass('active');
+              
+          $(this).parents('.menu__item').removeClass('active');
+        });
+        // end menu
+
+        //smartfilter
+        $('.catalog__smartfilter-btn').on("click", function(){
+          $('.catalog__left').addClass('active');
+          $('body').addClass('no-scroll');
+        });
+        $('.smartfilter__up--btn').on("click", function(){
+          $('.catalog__left').removeClass('active');
+          $('body').removeClass('no-scroll');
+        });
+
+        
+
+        $('.filter-parameters-box-title').on("click", function(){
+          $(this).parent().toggleClass('active');
+        });        
+
+         $('.popup-option__value span').on("click", function(){
+          $(this).parent().toggleClass('active');
+        });   	
+
+         $('.popup-option__item').on("click", function(){
+         
+          $(this).parents('.popup-option__value').toggleClass('active');
+          $(this).parents('.popup-option__value').children('span').text($(this).text());
+        });  
+
+        //  $('.cart-product-info-choice-popup__item').on("click", function(){
+         
+        //   $(this).parents('.cart-product-info-choice__value').toggleClass('active');
+        //   $(this).parents('.cart-product-info-choice__value').children('span').text($(this).text());
+        // });  
+         
+
+
+          $('#cart-info__tabs').responsiveTabs({
+             startCollapsed: 'accordion'
+         });
+
+
+          var $menu = $(".header__wrap");
+
+        $(window).scroll(function(){
+            if ( $(this).scrollTop() > 200){
+            	
+                $menu.addClass("fixed");
+            } else if($(this).scrollTop() <= 200) {
+                $menu.removeClass("fixed");
+              
+            }
+        });//scroll
+
+        // $(window).scroll(function(){
+        //     if ( $(this).scrollTop() > 100 && $menu.hasClass("default") ){
+        //         $menu.removeClass("default").addClass("fixed");
+        //     } else if($(this).scrollTop() <= 100 && $menu.hasClass("fixed")) {
+        //         $menu.removeClass("fixed").addClass("default");
+        //     }
+        // });//scroll
+        // $(".cart-product-img__mini").slick({
+        //   dots: false,
+        //   vertical: true,
+        //   centerMode: true,
+        //   slidesToShow: 4,
+        //   slidesToScroll: 2
+        // });
+        
+
+
+           $(".cart-product__slider-mini").slick({
+			dots: false,
+			vertical: true,
+			verticalSwiping: true,
+			centerMode: true,
+			slidesToShow: 4,
+			slidesToScroll: 2,
+			asNavFor: '.cart-product__slider-main',
+			focusOnSelect: true
+			
+
+
+        });
+
+        $(".cart-product__slider-main").slick({
+        	vertical: false,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			fade: true,
+			responsive: [	
+					
+			    {
+			      breakpoint: 576,
+			      settings: {
+			        dots: true,
+			        fade: false			      
+			      }
+			    }
+
+			  ]
+			// asNavFor: '.cart-product__slider-mini'
+        });
+
+   //      $(".posts-inst__items").slick({
+			
+			// responsive: [
+				
+   //          	{
+
+  	// 		      breakpoint: 576,
+  	// 		      settings: {
+  	// 		      	dots: false,
+			// 		slidesToShow: 3,
+			// 		slidesToScroll: 2,
+			// 		centerMode: true,
+			// 		focusOnSelect: true
+
+  	// 		      }
+  	// 		    }
+  			   	
+  	// 		   ]
+
+
+   //      });
+
+         $(".slider__and-order").slick({
+        	vertical: false,
+			slidesToShow: 4,
+			arrows: true,
+			infinite: false,
+  			focusOnSelect: true,
+  			responsive: [
+  			    {
+  			      breakpoint: 1024,
+  			      settings: {
+  			        slidesToShow: 4
+  			      }
+  			    },
+  			    {
+  			      breakpoint: 768,
+  			      settings: {
+  			        slidesToShow: 3
+  			      }
+  			    },
+  			    {
+  			      breakpoint: 576,
+  			      settings: {
+  			      	centerMode: true,
+  			      	infinite: true,
+  			        slidesToShow: 2,
+  			        arrows: false,
+  			        initialSlide: 1
+
+  			      }
+  			    }	
+  			   ]
+  			
+				
+        });
+
+        // $("#carousel").slick('slickSetOption', 'slidesToScroll', 3, true);
+        
+
+      });
+	
+
+	// slider price
+	$( function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 100, 300 ],
+      slide: function( event, ui ) {
+        $( "#lower-price" ).val(ui.values[ 0 ]);
+        $( "#higher-price" ).val(ui.values[ 1 ]);
+
+      }
+    });
+    $( "#lower-price" ).val($( "#slider-range" ).slider( "values", 0 ));
+    $( "#higher-price" ).val($( "#slider-range" ).slider( "values", 1 ));
+  } );
+ 
+
+
+</script>
+</body>
+</html>

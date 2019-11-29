@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Bw Modelica';
+    src: local('Bw Modelica Regular'), local('Bw-Modelica-Regular'),
+        url('BwModelicaCyrillicDEMO-Regular.woff2') format('woff2'),
+        url('BwModelicaCyrillicDEMO-Regular.woff') format('woff'),
+        url('BwModelicaCyrillicDEMO-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Bw Modelica';
+    src: local('Bw Modelica Medium'), local('Bw-Modelica-Medium'),
+        url('BwModelicaCyrillicDEMO-Medium.woff2') format('woff2'),
+        url('BwModelicaCyrillicDEMO-Medium.woff') format('woff'),
+        url('BwModelicaCyrillicDEMO-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Bw Modelica';
+    src: local('Bw Modelica Bold'), local('Bw-Modelica-Bold'),
+        url('BwModelicaCyrillicDEMO-Bold.woff2') format('woff2'),
+        url('BwModelicaCyrillicDEMO-Bold.woff') format('woff'),
+        url('BwModelicaCyrillicDEMO-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Bw Modelica';
+    src: local('Bw Modelica Extra Bold'), local('Bw-Modelica-Extra-Bold'),
+        url('BwModelicaCyrillicDEMO-ExtraBold.woff2') format('woff2'),
+        url('BwModelicaCyrillicDEMO-ExtraBold.woff') format('woff'),
+        url('BwModelicaCyrillicDEMO-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+  }

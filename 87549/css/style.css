@@ -4339,11 +4339,11 @@ background: #f4f4f4;
 		padding: 5px;
 	}
 	.cart-slider .slick-track {
-		padding-left: 96%;
+		margin-left: -15px;
 	}
 	.cart-slider .slick-list {
     	margin: 0px -15px;
-    	padding: ;adding: 15px 20px;
+    	padding: 15px 20px;
 	}
 	.order-contacts-city-popup__item {
 		padding: 7px 0;
@@ -4646,5 +4646,8 @@ background: #f4f4f4;
 	}
 	.slider-item__price--old .-price {font-size: 11px;}
 	.slider-item__price--new {font-size: 14px;}
+	.header {
+		height: 69px;
+	}
 
 }

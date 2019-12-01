@@ -37,7 +37,7 @@ a {
 	color: #564c48;
 }
 .container {
-	max-width: 1366px;
+	max-width: 1396px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
@@ -62,7 +62,7 @@ a {
 }
 .upper__logo {
 	max-width: 275px;    
-	padding-top: 12px;
+	/*padding-top: 17px;*/
 }
 .upper__logo img {
 	max-width: 100%;
@@ -558,9 +558,10 @@ a {
 }
 /*section offer*/
 .offer__btn {
-	height: 83px;
-	padding: 0 70px;
-	font-size: 16px;
+	height: 81px;
+    padding: 0px 69px;
+    font-size: 15px;
+    letter-spacing: 2.1px;
 }
 .offer__wrap {
 	background-color: #fefaf6;
@@ -1547,6 +1548,13 @@ letter-spacing: 0.07px;
 }
 .catalog-item {
 	position: relative;
+}
+
+
+@media (min-width: 1001px) and (max-width: 1100px) {
+	.header__wrap.fixed .menu__item>a {
+		padding: 0 15px;
+	}
 }
 
 @media (min-width: 1000px) {
@@ -2921,7 +2929,7 @@ li.paginator__next span.-arrow, li.paginator__prev span.-arrow {
 	background-color: #ffffff;
 	margin: 5px;
 	width: 257px !important;
-	height: 106px;
+	height: 106px !important;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -3381,7 +3389,7 @@ background: #f4f4f4;
 }
 
 .cart-slider .slick-slide {
-	padding: 0 13px;
+	margin: 0 13px;
 	transition: all ease-in-out .3s;
 	opacity: 0;
 }

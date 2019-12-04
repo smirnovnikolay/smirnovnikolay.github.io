@@ -957,6 +957,9 @@ letter-spacing: 0.07px;
 }
 
 /* catalog */
+.catalog__right {
+	width: 100%;
+}
 .catalog__block {
 	padding-bottom: 100px;
 }

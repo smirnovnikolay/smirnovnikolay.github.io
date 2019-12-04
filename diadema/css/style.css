@@ -3691,6 +3691,9 @@ background: #f4f4f4;
 	right: -19px;
 }
 @media (min-width: 1001px) {
+	.cart-product__info {
+		margin-left: 70px;
+	}
 	.header {
 	min-height: 213px;
 	}

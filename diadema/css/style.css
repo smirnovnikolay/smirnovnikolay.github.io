@@ -3687,7 +3687,9 @@ background: #f4f4f4;
 }
 
 /*slide big menu*/
-
+.header__wrap.fixed .stash__pop{
+	right: -19px;
+}
 @media (min-width: 1001px) {
 	.header {
 	min-height: 213px;
@@ -3695,7 +3697,7 @@ background: #f4f4f4;
 		.header__wrap {
 	top: -100%;
 	}
-
+	
 	.header__wrap.fixed {
 		position: fixed;
 		width: 100%;

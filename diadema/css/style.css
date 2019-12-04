@@ -340,10 +340,10 @@ a {
     position: absolute;
     z-index: 100;
     display: none;
-    right: -4px;
-    top: -webkit-calc(100% + 16px);
-    top: -moz-calc(100% + 16px);
-    top: calc(100% + 16px);
+    right: 29px;
+    top: -webkit-calc(100% + 31px);
+    top: -moz-calc(100% + 31px);
+    top: calc(100% + 31px);
     box-shadow: 0 5px 27px rgba(200, 200, 212, 0.2);
 	border: 1px solid #e6e6e6;
 }
@@ -352,13 +352,13 @@ a {
 }
 .stash__pop:before {
 	position: absolute;
-    right: 10px;
-    top: -8px;
+    right: 26px;
+    top: -11px;
     background-color: #ffffff;
     content: '';
     display: block;
-    width: 14px;
-    height: 14px;
+    width: 20px;
+    height: 20px;
     border-top: 1px solid #e6e6e6;
     border-left: 1px solid #e6e6e6;
     -webkit-transform: rotateZ(45deg);
@@ -379,9 +379,9 @@ a {
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    border-bottom: 1px solid #e6e6e6;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
+    border-bottom: 1px solid #f9f9f9;
+    padding-bottom: 19px;
+    margin-bottom: 19px;
 }    
 .stash__item:last-child {
 	margin-bottom: 0;
@@ -408,11 +408,6 @@ a {
     -moz-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -moz-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
 }
 
 .stash__item p {
@@ -479,36 +474,16 @@ a {
 }
 .bx-basket-item-list-item-price {
 	letter-spacing: 0.42px;
+	margin-bottom: 7px;
 }
 
 .stash__total {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -moz-box-orient: vertical;
-    -moz-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
-    -moz-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -moz-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
     padding: 0px 18px 35px 18px;
     text-align: center;
 }
 .stash__summary{
 	letter-spacing: 0.54px;
+	font-size: 19px;
 }
 
 .btn {
@@ -555,6 +530,8 @@ a {
 }
 .btn--stash {
 	height: 52px;
+	font-size: 10px;
+	padding: 0 55px;
 }
 /*section offer*/
 .offer__btn {
@@ -4359,7 +4336,8 @@ background: #f4f4f4;
     	padding: 15px 10px;
 	}
 	.cart-slider .slick-slide {
-		padding: 0px 6px;
+		margin: 0px 6px;
+
 	}
 
 }

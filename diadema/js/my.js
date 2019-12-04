@@ -165,24 +165,7 @@
   		// 	});	
     
 
-		if ($(document).width() <= '576'){
-    		  $(".cart-advantage__items").slick({
-	        	vertical: false,
-				slidesToShow: 1,
-				arrows: false,
-				infinite: false,
-				variableWidth: true,
-	  			focusOnSelect: true
-	  			
-  			});	 
-    		  // add link on basket
-  			$('.upper-basket.no-null .upper-basket__wrap').attr("href","/basket");        	
-    	} else {
-    		
-    		 $('.upper-basket.no-null .upper-basket__wrap').on("click", function(){
-	        	$('.stash__pop').toggleClass('active');              
-	        });    
-    	}
+		
 
 
 });
@@ -214,3 +197,27 @@
  $(function() {
     $('#phone1, #phone2, #phone3, #phone4').mask("+7 (999) 99-99-999");    
   });   
+
+
+  function windowSize(){
+    	if ($(document).width() <= '576'){
+    		  $(".cart-advantage__items").slick({
+	        	vertical: false,
+				slidesToShow: 1,
+				arrows: false,
+				infinite: false,
+				variableWidth: true,
+	  			focusOnSelect: true
+	  			
+  			});	 
+    		  // add link on basket
+  			$('.upper-basket.no-null .upper-basket__wrap').attr("href","/basket");        	
+    	} else {
+
+    		 $('.upper-basket.no-null .upper-basket__wrap').on("click", function(){
+	        	$('.stash__pop').toggleClass('active');              
+	        });    
+    	}
+	}
+
+	$(document).ready(windowSize);

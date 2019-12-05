@@ -6,7 +6,7 @@ html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
 }
-
+a:active, a:focus { outline: none; }
 *,
 *::before,
 *::after {

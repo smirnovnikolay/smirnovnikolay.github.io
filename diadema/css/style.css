@@ -1310,7 +1310,7 @@ letter-spacing: 0.07px;
 
 }
 .catalog__smartfilter-btn--img {
-
+	width: 18px;
 }
 .catalog__title {
 	font-size: 28px;

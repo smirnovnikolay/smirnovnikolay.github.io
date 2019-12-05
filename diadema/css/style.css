@@ -3942,6 +3942,9 @@ background: #f4f4f4;
 		width: 16px;
 		margin-right: 12px;
 	}
+	.menu__info-block--phone a {
+		display: flex;
+	}
 	.menu__info-block--time-work {
 		color: #a29e9d;
 		font-size: 12px;

@@ -1060,7 +1060,7 @@ letter-spacing: 0.07px;
 	display: -ms-flexbox;
 	display: flex;
 }
-.footer__social div {
+.social-icon {
 	background-color: #ffac47;
 	border-radius: 50%;
 	width: 40px;
@@ -1075,8 +1075,19 @@ letter-spacing: 0.07px;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	background-size: 25px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #ffac47;
 }
-.footer__social div:hover {
+.social-icon--facebook {
+	background-image: url(../img/facebook-w.svg);
+	
+}
+.social-icon--instagram {
+	background-image: url(../img/instagram-w.svg);
+}
+.footer__social .social-icon:hover {
 	background-color: #fe9e2a;
 }
 .footer__social a {
@@ -1085,6 +1096,7 @@ letter-spacing: 0.07px;
 .footer__social a:last-child{
 	margin-right: 0;
 }
+
 .footer__callback{
 	margin-right: 47px;
 }

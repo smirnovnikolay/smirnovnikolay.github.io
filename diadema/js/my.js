@@ -8,18 +8,23 @@
           $('.menu__wrapper').toggleClass('active');
           $('body').addClass('no-scroll');         
         });
+
         $('.menu__close').on("click", function(){
           $('.menu__wrapper').toggleClass('active');       
           $('body').removeClass('no-scroll');
         });     
+
         $('.menu__item a').on("click", function(){
-          $('.menu').addClass('active');
+          // Проверка наличия подменю
+          if($(this).parent().children('.sub-menu__wrap').length > 0) {
+            $('.menu').addClass('active');
+            $(this).parent().addClass('active');
+          }
           
-          $(this).parent().addClass('active');
         });      
+
         $('.sub-menu__name').on("click", function(){
-          $('.menu').removeClass('active');
-              
+          $('.menu').removeClass('active');              
           $(this).parents('.menu__item').removeClass('active');
         });
     // end menu

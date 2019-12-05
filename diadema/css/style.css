@@ -2930,9 +2930,7 @@ li.paginator__next span.-arrow, li.paginator__prev span.-arrow {
 	min-width: 73px;
 	max-width: 73px;
 }
-.cart-advantage-item__img img {
-	width: 42px !important;
-}
+
 .cart-advantage-item__text {
 	display: -webkit-flex;
 	display: -moz-flex;

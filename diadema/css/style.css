@@ -319,7 +319,12 @@ a {
 	transform: translateX(0);
 	right: 0;
 }
-
+.menu__wrapper.active .menu__item .sub-menu__wrap {
+	left: 0;
+    right: unset;
+    transform: translate(100%);
+    top: 0;
+}
 /*sub menu*/
 .sub-menu__wrap {
 	position: absolute;

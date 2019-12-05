@@ -6,7 +6,7 @@ html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
 }
-a:active, a:focus { outline: none; }
+
 *,
 *::before,
 *::after {
@@ -2252,8 +2252,11 @@ li.paginator__next span.-arrow, li.paginator__prev span.-arrow {
 	letter-spacing: 0.32px;
 }
 .order-purchases__total .purchases-total__back-to-cart span {
-	background: url(../img/icon_edit.png) left center no-repeat;
+	/*background: url(../img/icon_edit.png) left center no-repeat;*/
+	background: url(../img/pencil-edit-button.svg) left center no-repeat;
 	padding-left: 30px;
+	-webkit-background-size: 15px;
+	background-size: 15px;
 }
 .order-purchases__wrap {
 	display: -webkit-flex;

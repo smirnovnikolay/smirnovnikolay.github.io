@@ -1192,6 +1192,7 @@ letter-spacing: 0.07px;
 	border-radius: 3px;
 	background-color: #fdfdfd;
 	padding: 4px 32px;
+	padding-bottom: 100px;
 }
 
 .hider__row {

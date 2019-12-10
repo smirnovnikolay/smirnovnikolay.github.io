@@ -24,7 +24,12 @@ input {
 	outline: none;
 	font-family: "Bw Modelica", arial, san-serif;
 }
-
+button {
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+}
 body {
   margin: 0;
   padding: 0;
@@ -93,6 +98,7 @@ a {
 	font-size: 12px;
 	font-weight: 400;
 	letter-spacing: 1.22px;
+	cursor: pointer;
 	
 
 }

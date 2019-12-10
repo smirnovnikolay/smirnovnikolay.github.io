@@ -29,9 +29,9 @@
 	                                <span></span>
                                 </div>
                             </div>
-							<div class="upper__phone">0 800 334 2201</div>
+							<a href="tel:08003342201"><div class="upper__phone">0 800 334 2201</div></a>
 							<div class="upper__callback">
-								<a href="tel:08003342201">
+								<a class="classforpopup__fast-order">
 									<span>Перезвоните мне</span>
 									<div class="upper__img">
 											<img src="img/telephone.svg" alt="Телефон">
@@ -527,7 +527,7 @@
 	 					<!-- /.footer__contact -->
 	 					<div class="footer__feedback">
 	 						<div class="footer__callback">
-	 							<a class="btn btn-o">Перезвоните мне</a>
+	 							<a class="btn btn-o classforpopup__fast-order">Перезвоните мне</a>
 	 						</div>
 	 						<!-- /.footer__callback -->
 	 						<div class="footer__social">
@@ -1046,9 +1046,12 @@
 						<div class="cart-callback__title">Заказать без оформления</div>
 						<!-- /.cart-callback__title -->
 						<div class="cart-callback__block">
-							<input type="text" class="cart-callback__name" placeholder="Введите имя">
-							<input type="text" class="cart-callback__phone" id="phone1" placeholder="+7 (___) ___-__-__">
-							<a href="" class="btn cart-callback__btn">Жду звонка</a>
+							<form>
+								<input type="text" class="cart-callback__name" placeholder="Введите имя" required>
+								<input type="text" class="cart-callback__phone" id="phone1" placeholder="+7 (___) ___-__-__" required>
+								<button href="" class="btn cart-callback__btn">Жду звонка</button>
+									<!-- <a href="" class="btn cart-callback__btn">Жду звонка</a> -->
+							</form>
 						</div>
 						<!-- /.cart-callback__block -->
 					</div>
@@ -1761,10 +1764,12 @@
 			        <!-- /.popup-form__title -->
 			        <div class="popup-form__subtitle">Заполните поля и наш менеджер свяжется с вами</div>
 			        <!-- /.popup-form__subtitle -->
-					<input type="text" class="popup-callback__name" placeholder="Введите имя">
-					<input type="text" class="popup-callback__phone" id="phone2" placeholder="+7 (___) ___-__-__">
-					<a href="" class="btn popup-callback__btn">Отправить заявку</a>
-
+			        <form>
+						<input type="text" class="popup-callback__name" placeholder="Введите имя" required>
+						<input type="text" class="popup-callback__phone" id="phone2" placeholder="+7 (___) ___-__-__"  required="required">
+						<button  class="btn popup-callback__btn">Отправить заявку</button>
+						<!-- <a  class="btn popup-callback__btn">Отправить заявку</a> -->
+					</form>
 					<div class="popup-form__footer-text">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</div>	
 
 			        <!-- /.form -->
@@ -1786,8 +1791,6 @@
 </div>
 
   <!-- /.overlay -->
-<div class="classforpopup__fast-order">popup__fast-order (Нажать что бы открыть)</div>
-<div class="classforpopup__thank">popup__thank(Нажать что бы открыть)</div>
 
 <script type="text/javascript" src="js/my.js"></script>
 

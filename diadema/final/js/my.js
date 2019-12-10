@@ -50,9 +50,10 @@
         });
 
         //popup popup__thank
-        $('.classforpopup__thank').on("click", function(){
+        $('form').submit( function(){
           $('.popup-overlay').addClass('active');
           $('body').addClass('no-scroll');
+           $('.popup__fast-order').removeClass('active');
           $('.popup__thanks').addClass('active');         
         });
 
@@ -200,7 +201,7 @@
 
 
  $(function() {
-    $('#phone1, #phone2, #phone3, #phone4').mask("+7 (999) 99-99-999");    
+    $('#phone1, #phone2, #phone3, #phone4').mask("+7 (999) 999-99-99");    
   });   
 
 

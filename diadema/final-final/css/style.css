@@ -4133,6 +4133,7 @@ background: #f4f4f4;
 /* Tab element */
 .r-tabs .r-tabs-nav .r-tabs-tab {
 	position: relative;
+	width: auto;
 }
 
 /* Tab anchor */

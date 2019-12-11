@@ -4127,6 +4127,8 @@ background: #f4f4f4;
 	margin: 0;
 	padding: 10px 0px;
 	border-bottom: 1px solid #eaeaea;
+	display: flex;
+	justify-content: flex-start;
 }
 /* Tab element */
 .r-tabs .r-tabs-nav .r-tabs-tab {

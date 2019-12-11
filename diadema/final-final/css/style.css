@@ -2521,13 +2521,13 @@ li.paginator__next span.-arrow, li.paginator__prev span.-arrow {
 	background: #ffffff url(../img/name-icon-null.png) 25px center no-repeat;
 }
 .cart-callback__block .cart-callback__phone:placeholder-shown, .popup-overlay .popup-callback__phone:placeholder-shown{
-	background: #ffffff url(../img/phone-icon-null.png) 25px center no-repeat;
+	background: #ffffff url(../img/phone-icon-null.png) 21px center no-repeat;
 }
 .cart-callback__block .cart-callback__name,.popup-overlay .popup-callback__name{
 	background: #ffffff url(../img/name-icon-active.png) 25px center no-repeat;
 }
 .cart-callback__block .cart-callback__phone, .popup-overlay .popup-callback__phone{
-	background: #ffffff url(../img/phone-icon-active.png) 25px center no-repeat;
+	background: #ffffff url(../img/phone-icon-active.png) 21px center no-repeat;
 }
 .cart-callback__btn {
 	font-size: 12px;
@@ -4127,13 +4127,10 @@ background: #f4f4f4;
 	margin: 0;
 	padding: 10px 0px;
 	border-bottom: 1px solid #eaeaea;
-	display: flex;
-	justify-content: flex-start;
 }
 /* Tab element */
 .r-tabs .r-tabs-nav .r-tabs-tab {
 	position: relative;
-	width: auto;
 }
 
 /* Tab anchor */
@@ -5276,7 +5273,10 @@ background: #f4f4f4;
 
 }
 @media (max-width: 576px) {
-
+	.cart-callback__block input, .popup-form input {
+		margin-left: 74px;
+		font-size: 10px;
+	}
 	.cart-advantage__item {
 		height: 86px !important;
 	}

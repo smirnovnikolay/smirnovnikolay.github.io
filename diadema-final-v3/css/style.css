@@ -1433,7 +1433,7 @@ letter-spacing: 0.07px;
 }
 .filter-parameters-box-title span:after {
 	content:'';
-	display:inline-block;
+	display: inline-block;
 	width: 16px;
 	height: 8px;
 	background: url(../img/arrow_up.png) center no-repeat;
@@ -4299,15 +4299,13 @@ background-color: #f4f4f4;
 }
 .r-tabs .r-tabs-accordion-title .r-tabs-anchor:after {
 	content:'';
-	display: block;
+	display: inline-block;
     width: 16px;
-    height: 100%;
+    height: 8px;
     background: url(../img/arrow_up.png) center no-repeat;
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
             transform: rotate(180deg);
-    position: absolute;
-    right: 20px;
 
 }
 /* Active accordion anchor */
@@ -5410,6 +5408,9 @@ background-color: #f4f4f4;
 
 }
 @media (max-width: 576px) {
+	.catalog__left {
+		min-width: 300px;
+	}
 	.cart-callback__block {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;

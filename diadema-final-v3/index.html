@@ -815,8 +815,8 @@
 										<!-- /.catalog-item__about -->
 									</div>
 										<div class="catalog-item__overimg">
-											<div class="catalog-item__mark catalog-item__mark--hit"></div>
-											<div class="catalog-item__mark catalog-item__mark--new"></div>
+											<!-- <div class="catalog-item__mark catalog-item__mark--hit"></div>
+											<div class="catalog-item__mark catalog-item__mark--new"></div> -->
 										<!-- /.catalog-item__mark -->
 										</div> 
 								</div>
@@ -852,8 +852,8 @@
 										<!-- /.catalog-item__about -->
 									</div>
 									<div class="catalog-item__overimg">
-										<div class="catalog-item__mark catalog-item__mark--hit"></div>
-										<div class="catalog-item__mark catalog-item__mark--new"></div>
+										<!-- <div class="catalog-item__mark catalog-item__mark--hit"></div>
+										<div class="catalog-item__mark catalog-item__mark--new"></div> -->
 											<!-- /.catalog-item__mark -->
 									</div> 
 								</div>
@@ -1091,8 +1091,43 @@
 				<div class="order__title page__title">Оформление заказа</div>
 				<!-- /.order__title page__title -->
 				<div class="order__content">
+					<div class="order-contacts">
+						<div class="order-contacts__title order-content__title">1. Контактные данные</div>
+						<!-- /.order-contacts__title -->
+						<div class="order-contacts__row">
+							<div class="order-contacts__first-name">
+								<span>Имя</span>
+								<input type="text">
+							</div>
+							<div class="order-contacts__last-name">
+								<span>Фамилия</span>
+								<input type="text">
+							</div>
+							
+	
+						</div>
+						<!-- /.order-contacts__row -->
+						<div class="order-contacts__row">
+							<div class="order-contacts__phone">
+								<span>Телефон</span>
+								<input type="text">
+							</div>
+							<div class="order-contacts__email">
+								<span>Email</span>
+								<input type="email">
+							</div>
+							
+						</div>
+						<!-- /.order-contacts__row -->
+						<div class="order-contacts__row">
+							<a href="" class="btn btn-o order-contacts__btn">следующий шаг</a>
+						</div>
+						<!-- /.order-contacts__row -->
+					</div>
+					<!-- /.order-contacts -->
+
 					<div class="order-purchases">
-						<div class="order-content__title order-purchases__title">1. Товары в заказе</div>
+						<!-- <div class="order-content__title order-purchases__title">1. Товары в заказе</div> -->
 						<!-- /.purchases__title -->
 						<div class="order-purchases__wrap">	
 							<div class="order-purchases__items">
@@ -1165,58 +1200,29 @@
 					</div>
 					<!-- /.purchases__block -->
 
-					<div class="order-contacts">
-						<div class="order-contacts__title order-content__title">2. Контактные данные</div>
-						<!-- /.order-contacts__title -->
-						<div class="order-contacts__row">
-							<div class="order-contacts__first-name">
-								<span>Имя</span>
-								<input type="text">
-							</div>
-							<div class="order-contacts__last-name">
-								<span>Фамилия</span>
-								<input type="text">
-							</div>
-							<div class="order-contacts__phone">
-								<span>Телефон</span>
-								<input type="text">
-							</div>
-	
-						</div>
-						<!-- /.order-contacts__row -->
-						<div class="order-contacts__row">
-							<div class="order-contacts__email">
-								<span>Email</span>
-								<input type="text">
-							</div>
-							<div class="order-contacts__city">
-								<span>Город</span>
-								
-
-								<div class="order-contacts-city__value popup-option__value">
-									<span>Москва</span>
-									<div class="order-contacts-city__popup popup-option">
-										<ul>
-											<li class="order-contacts-city-popup__item popup-option__item">Киев</li>
-											<li class="order-contacts-city-popup__item popup-option__item">Ростов</li>
-											<li class="order-contacts-city-popup__item popup-option__item">Усурийск</li>
-											<li class="order-contacts-city-popup__item popup-option__item">45</li>
-											<li class="order-contacts-city-popup__item popup-option__item">45</li>
-										</ul>
-									</div>
-								</div>
-								
-							</div>
-						</div>
-						<!-- /.order-contacts__row -->
-						<div class="order-contacts__row">
-							<a href="" class="btn btn-o order-contacts__btn">следующий шаг</a>
-						</div>
-						<!-- /.order-contacts__row -->
-					</div>
-					<!-- /.order-contacts -->
+					
 					<div class="order-pay-and-delivery">
-						<div class="order-pay-and-delivery__title order-content__title">3. Оплата и доставка</div>			
+						<div class="order-pay-and-delivery__title order-content__title">2. Оплата и доставка</div>			
+						<div class="order-pay-and-delivery__block">
+							<div class="order-contacts__city">
+									<span>Город</span>
+									
+
+									<div class="order-contacts-city__value popup-option__value">
+										<span>Москва</span>
+										<div class="order-contacts-city__popup popup-option">
+											<ul>
+												<li class="order-contacts-city-popup__item popup-option__item">Киев</li>
+												<li class="order-contacts-city-popup__item popup-option__item">Ростов</li>
+												<li class="order-contacts-city-popup__item popup-option__item">Усурийск</li>
+												<li class="order-contacts-city-popup__item popup-option__item">45</li>
+												<li class="order-contacts-city-popup__item popup-option__item">45</li>
+											</ul>
+										</div>
+									</div>
+									
+								</div>
+						</div>
 						<div class="order-pay-and-delivery__block">
 							<div class="order-pay-and-delivery__block-title">Способ доставки</div>
 							<!-- /.order-pay-and-delivery__title -->

@@ -150,13 +150,14 @@
     // slick
         $(".cart-product__slider-mini").slick({
 			dots: false,
-			vertical: true,
-			verticalSwiping: true,
-			centerMode: true,
+			vertical: false,
+			verticalSwiping: false,
+			// centerMode: true,
 			slidesToShow: 4,
-			slidesToScroll: 2,
+			slidesToScroll: 4,
 			asNavFor: '.cart-product__slider-main',
-			focusOnSelect: true
+			focusOnSelect: true,
+      infinite: false
         });
 
         $(".cart-product__slider-main").slick({

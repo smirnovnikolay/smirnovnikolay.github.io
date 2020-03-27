@@ -213,8 +213,8 @@ body {
     /* background:  */
         /* url(../img/main-house.png) center bottom no-repeat,  */
         /* url(../img/main-cloud.jpg) center no-repeat; */
-    background: url(../img/main/main-img.jpg) center no-repeat;
-    background-image: url(../img/main/main-img.jpg);
+    /* background: url(../img/main/main-img.jpg) center no-repeat; */
+    background-image: url(../img/main/main-img-min.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -269,13 +269,13 @@ h1 {
 .about-photo {
     min-width: 44.3%;
     background-color: #eeeced;
-    background-image: url(../img/about/about-photo.png);
+    background-image: url(../img/about/about-photo-min.png);
     background-position: right -89px bottom;
     background-repeat: no-repeat;
 }
 .about-content {
     flex-grow: 1;
-    background-image: url(../img/about/about-bg2.jpg);
+    background-image: url(../img/about/about-bg2-min.jpg);
     background-position: left center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -865,7 +865,7 @@ h1 {
 .documents {
     background-color: #a9a9a9;
     padding: 73px 0 125px 0;
-    background-image: url(../img/documents/documents-bg.jpg);
+    background-image: url(../img/documents/documents-bg-min.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1177,7 +1177,7 @@ h1 {
 /* feedback */
 .feedback {
     
-    background-image: url(../img/feedback/feedback-bg.jpg);
+    background-image: url(../img/feedback/feedback-bg-min.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -1509,6 +1509,7 @@ button {
 .contacts {
     padding: 89px 0 102px 0;
     background: #414141 url(../img/contacts/contacts-bg-min-min.png) center;
+    background-repeat: repeat;
 }
 .contacts-title {
     text-align: center;

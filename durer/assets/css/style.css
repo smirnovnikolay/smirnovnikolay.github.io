@@ -269,13 +269,13 @@ h1 {
 .about-photo {
     min-width: 44.3%;
     background-color: #eeeced;
-    background-image: url(../img/about/about-photo-min.png);
+    /* background-image: url(../img/about/about-photo-min.png); */
     background-position: right -89px bottom;
     background-repeat: no-repeat;
 }
 .about-content {
     flex-grow: 1;
-    background-image: url(../img/about/about-bg2-min.jpg);
+    /* background-image: url(../img/about/about-bg2-min.jpg); */
     background-position: left center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -431,7 +431,7 @@ h1 {
     text-align: center;
 }
 .technical-wrapper {
-    background-image: url(../img/technical/house_corr-min-min.jpg);
+    /* background-image: url(../img/technical/house_corr-min-min.jpg); */
     background-size: cover;
     background-position: center center;
     background-color: gray;
@@ -865,7 +865,7 @@ h1 {
 .documents {
     background-color: #a9a9a9;
     padding: 73px 0 125px 0;
-    background-image: url(../img/documents/documents-bg-min.jpg);
+    /* background-image: url(../img/documents/documents-bg-min.jpg); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1101,9 +1101,7 @@ h1 {
     line-height: 27px;
     
 }
-.company-people {
-    background-color: #a9a9a9;
-}
+
 .company-people__title {
     color: #2d2d2d;
     font-family: Manrope;
@@ -1111,16 +1109,32 @@ h1 {
     font-weight: 700;
     line-height: 36px;
     text-align: center; 
-    letter-spacing: 0.4px;  
+    letter-spacing: 0.4px;
+    position: absolute;
+    z-index: 10;  
+    top: 43px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
      
 }
 .company-people {
-    height: 630px;
+    background-color: #a9a9a9;
     width: 100%;
     position: relative;
-    padding-top: 43px;
     margin-bottom: 44px;
+    position: relative; 
+    padding-top: 56.25%;  
 }
+.company-people img {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100% ;
+}
+
 .company-people__img {
     position: absolute;
     top: 0;

@@ -460,6 +460,21 @@
     .nav-inner {
         margin: 0 -20px;
     }
+    .header, .header-top__inner, .header-top {
+        height: 60px;
+    }
+    .nav {
+        top: 60px;
+    }
+    .main {
+        margin-top: 60px;
+    }
+    .nav-link {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 15px;
+        /* letter-spacing: 0.8px; */
+    }
     .about-content__inner {
         padding-left: 20px;
         padding-right: 20px;
@@ -568,6 +583,9 @@
     }
     .company-img__item {
         padding-left: 30px !important;
+    }
+    .contacts-block {
+        padding: 25px;
     }
 }
 

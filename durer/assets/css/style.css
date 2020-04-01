@@ -405,8 +405,9 @@ h1 {
     background-color: #ffffff;
     border-radius: 5px;
     top: 60%;
-    left: 37%;
+    left: 44.3%;
     padding: 20px 25px;
+    transform: translateX(-124px);
 }
 .about-bubble:before {
     content: '';

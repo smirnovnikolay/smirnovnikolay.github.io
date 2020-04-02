@@ -40,6 +40,9 @@
         height: 950px;
         position: relative;
     }
+    .nav-link {
+        font-size: 13rem;
+    }
 }
  
 @media (max-width: 992px) { 
@@ -166,7 +169,7 @@
         
     }
     .technical-list__img img {
-        width: 100%;
+        /* width: 100%; */
     }
     .technical-list__name {
         padding: 0 10px;
@@ -343,15 +346,13 @@
     }
     .faq-item__title {
         font-size: 18px;
-        height: 150px;
+        min-height: 150px;
     }
     .faq-item__text {
         font-size: 15px;
         min-height: 250px;
     }
-    .faq-item__num {
-        top: 105px;
-    }
+ 
     .faq-item {
         padding: 0px 25px;
     }
@@ -464,7 +465,43 @@
 }
 
 @media (max-width: 576px) {
-
+    .footer-inner {
+        padding: 18px 0;
+    }
+    .footer-logo {
+        width: 120px;
+    }
+    .footer-inner p {
+        font-size: 13rem;
+    }
+    .footer-inner > * {
+        margin: 0 20px;
+    }
+    .technical-list__item {
+        margin-bottom: 20px;
+        flex-basis: 100%;
+    }
+    .technical-list__img img {
+        height: 160px;
+    }
+    .technical-list__title {
+        margin-bottom: 20px;
+    }
+    .faq-title {
+        font-size: 20rem;
+    }
+    .technical-title, .portfolio-title, .documents-title,.cooperation-title, .section-title {
+        font-size: 28rem;
+    }
+    .advantages-title {
+        display: flex;
+    flex-direction: column;
+    text-align: center;
+    }
+    .advantages-title:after {
+        bottom: -15px;
+        transform: translateX(-20px);
+    }
     .container {
         padding: 0 20px;
     }
@@ -501,17 +538,19 @@
     }
     .technical-popup__inner {
         width: 90%;
+        min-width: unset;
     }
     .technical {}
     html {
         font-size: 0.9px;
     }
     .utp {
-        font-size: 25px;
+        font-size: 22px;
      }
      .utp--small {
-        font-size: 16px;
+        font-size: 15px;
         line-height: 1.5;
+        margin-bottom: 16px;
      }
     .header-bid {
         display: none;
@@ -563,14 +602,13 @@
         right: -20px;
     }
     .faq-slider .owl-dots .owl-dot span {
-        width: 40px;
-        height: 40px;
-        font-size: 17rem;
+        width: 35px;
+        height: 35px;
+        font-size: 16rem;
     }
     .faq-item__num {
         width: 40px;
         height: 40px;
-        top: 110px;
         font-size: 17rem;
     }
     .faq-item__title{
@@ -582,8 +620,8 @@
         line-height: 1.4;
     }
     .faq-item__text{
-        font-size: 14px;
-        line-height: 1.4;
+        font-size: 12px;
+        line-height: 1.45;
     }
     .company-slider .owl-dots .owl-dot span {
         width: 15px;
@@ -603,3 +641,15 @@
     }
 }
 
+@media (max-width: 400px) {
+    .contacts-block__info:before {
+        content: none;
+    }
+    .about {
+        overflow: hidden;
+    }
+    .advantages-item__img {
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}

@@ -314,13 +314,13 @@ h1 {
 .about-photo {
     min-width: 44.3%;
     background-color: #eeeced;
-    /* background-image: url(../img/about/about-photo-min.png); */
+    background-image: url(../img/about/about-photo-min.png);
     background-position: right -89px bottom;
     background-repeat: no-repeat;
 }
 .about-content {
     flex-grow: 1;
-    /* background-image: url(../img/about/about-bg2-min.jpg); */
+    background-image: url(../img/about/about-bg2-min.jpg);
     background-position: left center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -566,7 +566,9 @@ h1 {
     position: absolute;
     cursor: pointer;
 }
-
+.technical-point-link {
+    cursor: pointer;
+}
 .technical-point--1 {
     left: 488px;
     left: 42%;
@@ -801,6 +803,7 @@ h1 {
     background-size: 21px;
     padding-right: 33px;
     white-space: nowrap;
+    line-height: 21px;
 }
 .technical-tab__button:after {
     content:'';
@@ -1121,7 +1124,7 @@ h1 {
     font-family: Manrope;
     font-size: 17rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5;
     text-align: center;
     white-space: nowrap;
 }
@@ -1171,7 +1174,7 @@ h1 {
     font-family: Manrope;
     font-size: 17rem;
     font-weight: 400;
-    line-height: 24px; 
+    line-height: 1.45; 
     margin-bottom: 60px;   
 }
 .company-img {
@@ -1192,7 +1195,7 @@ h1 {
     font-family: Manrope;
     font-size: 19rem;
     font-weight: 700;
-    line-height: 27px;
+    line-height: 1.5;
 }
 .company-img__img {
     position: absolute;
@@ -1237,7 +1240,7 @@ h1 {
     font-family: Manrope;
     font-size: 19rem;
     font-weight: 700;
-    line-height: 27px;
+    line-height: 1.45;
     
 }
 
@@ -1291,6 +1294,8 @@ h1 {
 
 .company-slider {
     margin-bottom: 117px;
+    height: auto;
+    
 }
 .company-slider .owl-nav [class*=owl-] {
     width: 50px;
@@ -1349,7 +1354,7 @@ h1 {
     font-family: Montserrat;
     font-size: 26rem;
     font-weight: 700;
-    line-height: 32.64px;
+    line-height: 1.45;
     text-transform: uppercase;
     margin-bottom: 17px;  
     text-align: center;  
@@ -1359,7 +1364,7 @@ h1 {
     font-family: Manrope;
     font-size: 19rem;
     font-weight: 400;
-    line-height: 27.31px;
+    line-height: 1.45;
     margin-bottom: 52px;   
     text-align: center;   
 }
@@ -1607,6 +1612,7 @@ button {
     flex-direction: column;
     padding: 0 75px;
     text-align: center;
+    position: relative;
 }
 .faq-item__title--small {
     color: #ffffff;
@@ -1637,7 +1643,7 @@ button {
 }
 .faq-item__num {
     position: absolute;
-    top: 157px;
+    bottom: 0;
     left: 50%;
     transform: translate(-50%,50%);
     width: 45px;
@@ -1662,7 +1668,10 @@ button {
 /* contacts */
 .contacts {
     padding: 89px 0 102px 0;
-    background: #414141 url(../img/contacts/contacts-bg-min-min.png) center;
+   
+    background-color: #414141;
+    background-position: center center;
+    /* background-image: url(../img/contacts/contacts-bg-min-min.png); */
     background-repeat: repeat;
 }
 .contacts-title {
@@ -1905,22 +1914,4 @@ button {
     z-index: 4;
     left: 2em;
     bottom: -17em;
-}
-.section1__parallax4  {
-
-}
-.section1__parallax5  {
-
-}
-.section1__parallax6  {
-
-}
-.section1__parallax7  {
-
-}
-.section1__parallax8  {
-
-}
-.section1__parallax9  {
-
 }

@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Durer</title> <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <title>Durer</title>  <link rel="preload" href="assets/fonts/Manrope/web/manrope-bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="assets/fonts/Manrope/web/manrope-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="assets/css/fonts.css" as="style">
+    <link rel="preload" href="assets/css/style.css" as="style">
+   
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="preload" href="assets/img/interface/minus-in-circle.svg" as="image">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
@@ -49,10 +55,10 @@
                <div class="nav-inner">     
                     <ul class="nav-list">
                         <li class="nav-item">
-                            <a href="#main" class="nav-link">Главная</a>
+                            <a href="#main" class="nav-link" >Главная</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#advantages" class="nav-link">Преимущества</a>
+                            <a href="#advantages" class="nav-link" onclick="HeaderOut()">Преимущества</a>
                         </li>
                         <li class="nav-item">
                             <a href="#technical" class="nav-link">Технические решения</a>
@@ -141,11 +147,11 @@
                     <h2 class="advantages-title"><span class="advantages-title--number">1</span> Надёжность в эксплуатации</h2>
                     <!-- /.advantages-title -->
                     <div class="advantages-content">
-                        <div class="advantages-img"><img class="lazy" data-src="assets/img/advantages/advantages-img-1-min.png" class="lazy" data-original="assets/img/advantages/advantages-img-1-min.png" alt="Надёжность в эксплуатации"></div>
+                        <div class="advantages-img"><img class="lazy" data-src="assets/img/advantages/advantages-img-1-min.png" alt="Надёжность в эксплуатации"></div>
                         <!-- /.advantages-img -->
                         <div class="advantages-list">
                             <div class="advantages-item">
-                                <div class="advantages-item__img"><img class="lazy" src="data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7" data-src="assets/img/advantages/advantages-icon-1.1.svg" alt=""></div>
+                                <div class="advantages-item__img"><img class="lazy" data-src="assets/img/advantages/advantages-icon-1.1.svg" alt=""></div>
                                 <!-- /.advantages-item__img -->
                                 <div class="advantages-item__text">Изготовлена <b>из высокопрочной
                                     стали с антикоррозионным покрытием</b> </div>
@@ -289,8 +295,8 @@
                     <div class="technical-bubble">Нажмите на цифру, чтобы<br>
                         увидеть реализацию решения</div>
                     <div class="technical-item">
-                        <div class="technical-point technical-point--1">01</div>
-                        <div class="technical-popup">
+                        <div class="technical-point technical-point--1 technical-point-link" data-link="technical-popup--1">01</div>
+                        <div class="technical-popup technical-popup--1">
                             <div class="technical-popup__overlay"></div>
                             <!-- /.technical-popup__overlay -->
                             <div class="technical-popup__inner">
@@ -323,8 +329,8 @@
                     </div>
                     <!-- /.technical-item -->
                     <div class="technical-item">
-                        <div class="technical-point technical-point--2">02</div>
-                        <div class="technical-popup">
+                        <div class="technical-point technical-point--2 technical-point-link" data-link="technical-popup--2">02</div>
+                        <div class="technical-popup technical-popup--2">
                             <div class="technical-popup__overlay"></div>
                             <!-- /.technical-popup__overlay -->
                             <div class="technical-popup__inner">
@@ -357,8 +363,8 @@
                     </div>
                     <!-- /.technical-item -->
                     <div class="technical-item">
-                        <div class="technical-point technical-point--3">03</div>
-                        <div class="technical-popup">
+                        <div class="technical-point technical-point--3 technical-point-link" data-link="technical-popup--3">03</div>
+                        <div class="technical-popup technical-popup--3">
                             <div class="technical-popup__overlay"></div>
                             <!-- /.technical-popup__overlay -->
                             <div class="technical-popup__inner">
@@ -393,8 +399,8 @@
                     </div>
                     <!-- /.technical-item -->
                     <div class="technical-item">
-                        <div class="technical-point technical-point--4">04</div>
-                        <div class="technical-popup">
+                        <div class="technical-point technical-point--4 technical-point-link" data-link="technical-popup--4">04</div>
+                        <div class="technical-popup technical-popup--4">
                             <div class="technical-popup__overlay"></div>
                             <!-- /.technical-popup__overlay -->
                             <div class="technical-popup__inner">
@@ -430,8 +436,8 @@
                     </div>
                     <!-- /.technical-item -->
                     <div class="technical-item">
-                        <div class="technical-point technical-point--5">05</div>
-                        <div class="technical-popup">
+                        <div class="technical-point technical-point--5 technical-point-link" data-link="technical-popup--5">05</div>
+                        <div class="technical-popup technical-popup--5">
                             <div class="technical-popup__overlay"></div>
                             <!-- /.technical-popup__overlay -->
                             <div class="technical-popup__inner">                                
@@ -465,8 +471,8 @@
                     </div>
                     <!-- /.technical-item -->
                     <div class="technical-item">
-                        <div class="technical-point technical-point--6">06</div>
-                        <div class="technical-popup">
+                        <div class="technical-point technical-point--6 technical-point-link" data-link="technical-popup--6">06</div>
+                        <div class="technical-popup technical-popup--6">
                             <div class="technical-popup__overlay"></div>
                             <!-- /.technical-popup__overlay -->
                             <div class="technical-popup__inner">
@@ -524,8 +530,8 @@
                     </div>
                     <!-- /.technical-item -->
                     <div class="technical-item">
-                        <div class="technical-point technical-point--7">07</div>
-                        <div class="technical-popup">
+                        <div class="technical-point technical-point--7 technical-point-link" data-link="technical-popup--7">07</div>
+                        <div class="technical-popup technical-popup--7">
                             <div class="technical-popup__overlay"></div>
                             <!-- /.technical-popup__overlay -->
                             <div class="technical-popup__inner">
@@ -585,8 +591,8 @@
                     </div>
                     <!-- /.technical-item -->
                     <div class="technical-item">
-                        <div class="technical-point technical-point--8">08</div>
-                        <div class="technical-popup">
+                        <div class="technical-point technical-point--8 technical-point-link" data-link="technical-popup--8">08</div>
+                        <div class="technical-popup technical-popup--8">
                             <div class="technical-popup__overlay"></div>
                             <!-- /.technical-popup__overlay -->
                             <div class="technical-popup__inner">
@@ -646,8 +652,8 @@
                     </div>
                     <!-- /.technical-item -->
                     <div class="technical-item">
-                        <div class="technical-point technical-point--9">09</div>
-                        <div class="technical-popup">
+                        <div class="technical-point technical-point--9 technical-point-link" data-link="technical-popup--9">09</div>
+                        <div class="technical-popup technical-popup--9">
                             <div class="technical-popup__overlay"></div>
                             <!-- /.technical-popup__overlay -->
                             <div class="technical-popup__inner">
@@ -679,8 +685,8 @@
                     </div>
                     <!-- /.technical-item -->
                     <div class="technical-item">
-                        <div class="technical-point technical-point--10">10</div>
-                        <div class="technical-popup">
+                        <div class="technical-point technical-point--10 technical-point-link" data-link="technical-popup--10">10</div>
+                        <div class="technical-popup technical-popup--10">
                             <div class="technical-popup__overlay"></div>
                             <!-- /.technical-popup__overlay -->
                             <div class="technical-popup__inner">
@@ -712,8 +718,8 @@
                     </div>
                     <!-- /.technical-item -->
                     <div class="technical-item">
-                        <div class="technical-point technical-point--11">11</div>
-                        <div class="technical-popup">
+                        <div class="technical-point technical-point--11 technical-point-link" data-link="technical-popup--11">11</div>
+                        <div class="technical-popup technical-popup--11">
                             <div class="technical-popup__overlay"></div>
                             <!-- /.technical-popup__overlay -->
                             <div class="technical-popup__inner">
@@ -745,8 +751,8 @@
                     </div>
                     <!-- /.technical-item -->
                     <div class="technical-item">
-                        <div class="technical-point technical-point--12">12</div>
-                        <div class="technical-popup">
+                        <div class="technical-point technical-point--12 technical-point-link" data-link="technical-popup--12">12</div>
+                        <div class="technical-popup technical-popup--12">
                             <div class="technical-popup__overlay"></div>
                             <!-- /.technical-popup__overlay -->
                             <div class="technical-popup__inner">
@@ -794,42 +800,42 @@
                         <!-- /.technical-list__title -->
                         <div class="technical-list__block">
                             <div class="technical-list__item">
-                                <div class="technical-list__img"><img class="lazy" data-src="assets/img/technical/min/technical-img-01-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--1"><img class="lazy" data-src="assets/img/technical/min/technical-img-01-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Узел стены</div>
                                 <!-- /.technical-list__name -->
                             </div>
                             <!-- /.technical-list__item -->
                             <div class="technical-list__item">
-                                <div class="technical-list__img"><img class="lazy" data-src="assets/img/technical/min/technical-img-02-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--2"><img class="lazy" data-src="assets/img/technical/min/technical-img-02-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Узел внутреннего угла стены</div>
                                 <!-- /.technical-list__name -->
                             </div>
                             <!-- /.technical-list__item -->
                             <div class="technical-list__item">
-                                <div class="technical-list__img"><img class="lazy" data-src="assets/img/technical/min/technical-img-03-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--3"><img class="lazy" data-src="assets/img/technical/min/technical-img-03-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Узел наружного угла стены</div>
                                 <!-- /.technical-list__name -->
                             </div>
                             <!-- /.technical-list__item -->
                             <div class="technical-list__item">
-                                <div class="technical-list__img"><img class="lazy" data-src="assets/img/technical/min/technical-img-09-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--9"><img class="lazy" data-src="assets/img/technical/min/technical-img-09-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Узел низа кладки над аркой</div>
                                 <!-- /.technical-list__name -->
                             </div>
                             <!-- /.technical-list__item -->
                             <div class="technical-list__item">
-                                <div class="technical-list__img"><img class="lazy" data-src="assets/img/technical/min/technical-img-10-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--10"><img class="lazy" data-src="assets/img/technical/min/technical-img-10-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Узел радиальной выгнутой стены</div>
                                 <!-- /.technical-list__name -->
                             </div>
                             <!-- /.technical-list__item -->
                             <div class="technical-list__item">
-                                <div class="technical-list__img"><img class="lazy" data-src="assets/img/technical/min/technical-img-11-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--11"><img class="lazy" data-src="assets/img/technical/min/technical-img-11-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Узел радиальной вогнутой стены</div>
                                 <!-- /.technical-list__name -->
@@ -844,21 +850,21 @@
                         <!-- /.technical-list__subtitle -->
                         <div class="technical-list__block">
                             <div class="technical-list__item">
-                                <div class="technical-list__img"><img class="lazy" data-src="assets/img/technical/min/technical-img-06.1-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--6"><img class="lazy" data-src="assets/img/technical/min/technical-img-06.1-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Верхний узел примыкания к оконному проёму</div>
                                 <!-- /.technical-list__name -->
                             </div>
                             <!-- /.technical-list__item -->
                             <div class="technical-list__item">
-                                <div class="technical-list__img"><img class="lazy" data-src="assets/img/technical/min/technical-img-07.1-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--7"><img class="lazy" data-src="assets/img/technical/min/technical-img-07.1-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Нижний узел примыкания к оконному проёму</div>
                                 <!-- /.technical-list__name -->
                             </div>
                             <!-- /.technical-list__item -->
                             <div class="technical-list__item">
-                                <div class="technical-list__img"><img class="lazy" data-src="assets/img/technical/min/technical-img-08.1-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--8"><img class="lazy" data-src="assets/img/technical/min/technical-img-08.1-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Боковой узел примыкания к оконному проёму</div>
                                 <!-- /.technical-list__name -->
@@ -870,21 +876,21 @@
                         <!-- /.technical-list__subtitle -->
                         <div class="technical-list__block">
                             <div class="technical-list__item">
-                                <div class="technical-list__img"><img class="lazy" data-src="assets/img/technical/min/technical-img-06.2-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--6"><img class="lazy" data-src="assets/img/technical/min/technical-img-06.2-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Верхний узел примыкания к оконному проёму</div>
                                 <!-- /.technical-list__name -->
                             </div>
                             <!-- /.technical-list__item -->
                             <div class="technical-list__item">
-                                <div class="technical-list__img"><img class="lazy" data-src="assets/img/technical/min/technical-img-07.2-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--7"><img class="lazy" data-src="assets/img/technical/min/technical-img-07.2-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Нижний узел примыкания к оконному проёму</div>
                                 <!-- /.technical-list__name -->
                             </div>
                             <!-- /.technical-list__item -->
                             <div class="technical-list__item">
-                                <div class="technical-list__img"><img class="lazy" data-src="assets/img/technical/min/technical-img-08.2-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--8"><img class="lazy" data-src="assets/img/technical/min/technical-img-08.2-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Боковой узел примыкания к оконному проёму</div>
                                 <!-- /.technical-list__name -->
@@ -896,21 +902,21 @@
                         <!-- /.technical-list__subtitle -->
                         <div class="technical-list__block">
                             <div class="technical-list__item">
-                                <div class="technical-list__img"><img class="lazy" data-src="assets/img/technical/min/technical-img-06.3-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--6"><img class="lazy" data-src="assets/img/technical/min/technical-img-06.3-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Верхний узел примыкания к оконному проёму</div>
                                 <!-- /.technical-list__name -->
                             </div>
                             <!-- /.technical-list__item -->
                             <div class="technical-list__item">
-                                <div class="technical-list__img"><img class="lazy" data-src="assets/img/technical/min/technical-img-07.3-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--7"><img class="lazy" data-src="assets/img/technical/min/technical-img-07.3-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Нижний узел примыкания к оконному проёму</div>
                                 <!-- /.technical-list__name -->
                             </div>
                             <!-- /.technical-list__item -->
                             <div class="technical-list__item">
-                                <div class="technical-list__img"><img class="lazy" data-src="assets/img/technical/min/technical-img-08.3-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--8"><img class="lazy" data-src="assets/img/technical/min/technical-img-08.3-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Боковой узел примыкания к оконному проёму</div>
                                 <!-- /.technical-list__name -->
@@ -923,7 +929,7 @@
                         <div class="technical-list__block">
                             <div class="technical-list__item">
                                 <div class="technical-list__subtitle">Цоколь</div>
-                                <div class="technical-list__img"><img class="lazy" data-src="assets/img/technical/min/technical-img-04-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--4"><img class="lazy" data-src="assets/img/technical/min/technical-img-04-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Узел примыкания к цоколю</div>
                                 <!-- /.technical-list__name -->
@@ -931,7 +937,7 @@
                             <!-- /.technical-list__item -->
                             <div class="technical-list__item">
                                 <div class="technical-list__subtitle">Парапет</div>
-                                <div class="technical-list__img"><img class="lazy" data-src="assets/img/technical/min/technical-img-05-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--5"><img class="lazy" data-src="assets/img/technical/min/technical-img-05-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Узел примыкания к парапету</div>
                                 <!-- /.technical-list__name -->
@@ -939,7 +945,7 @@
                             <!-- /.technical-list__item -->
                             <div class="technical-list__item">
                                 <div class="technical-list__subtitle">Навес</div>
-                                <div class="technical-list__img"><img class="lazy" data-src="assets/img/technical/min/technical-img-12-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--12"><img class="lazy" data-src="assets/img/technical/min/technical-img-12-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Узел навеса</div>
                                 <!-- /.technical-list__name -->
@@ -1105,11 +1111,11 @@
         <!-- /.container -->
        
             <div class="bricks">
-                <img src="assets/img/brick/fast-bricks-min.png" alt="" class="parallax--1 parallax js-parallax" data-parallax-speed="1">
+                <img data-src="assets/img/brick/fast-bricks-min.png" alt="" class="parallax--1 parallax js-parallax lazy" data-parallax-speed="1">
               
-                <img src="assets/img/brick/norm-bricks-min.png" alt="" class="parallax--2 parallax js-parallax" data-parallax-speed="2">
+                <img data-src="assets/img/brick/norm-bricks-min.png" alt="" class="parallax--2 parallax js-parallax lazy" data-parallax-speed="2">
               
-                <img src="assets/img/brick/slow-bricks-min.png" alt="" class="parallax--3 parallax js-parallax" data-parallax-speed="4">
+                <img data-src="assets/img/brick/slow-bricks-min.png" alt="" class="parallax--3 parallax js-parallax lazy" data-parallax-speed="4">
                 
             </div>
        
@@ -1170,9 +1176,9 @@
                 </p>
                 <!-- /.company-text -->
                 <div class="company-slider owl-carousel owl-theme">
-                    <img class="owl-lazy" data-src="assets/img/company/company-photo-01-min.jpg" alt="" data-dot="1">
-                    <img class="owl-lazy" data-src="assets/img/company/company-photo-02-min.jpg" alt="" data-dot="2">
-                    <img class="owl-lazy" data-src="assets/img/company/company-photo-03-min.jpg" alt="" data-dot="3">
+                    <img class="lazy" data-src="assets/img/company/company-photo-01-min.jpg" alt="" data-dot="1">
+                    <img class="lazy" data-src="assets/img/company/company-photo-02-min.jpg" alt="" data-dot="2">
+                    <img class="lazy" data-src="assets/img/company/company-photo-03-min.jpg" alt="" data-dot="3">
                 </div>
                 <!-- /.company-slider -->
                 <p class="company-advantage">
@@ -1248,9 +1254,9 @@
             <!-- /.faq-title -->
             <div class="faq-content">
                 <div class="faq-slider owl-carousel owl-theme">
-
                     <div class="faq-item">
                         <div class="faq-item__title">
+                            <div class="faq-item__num"><span>01</span></div>
                             <span class="faq-item__title--big">Монолит залит не по проекту</span> 
                             <!-- /.faq-item__title--big -->
                             <span class="faq-item__title--small">Его нужно  доливать, или пилить, или же делать кронштейны «по месту». Нормативный допуск отклонения монолита 20 мм
@@ -1259,7 +1265,7 @@
                         </div>
                             
                         <!-- /.faq-item__title -->
-                        <div class="faq-item__num"><span>01</span></div>
+                        
                         <!-- /.faq-item__num -->
                         <div class="faq-item__text">
                             Кронштейны DURER регулируются во всех направлениях до 50 мм. В большинстве случаев этого достаточно, чтобы исключить дополнительные затраты.
@@ -1272,6 +1278,8 @@
 
                     <div class="faq-item">
                         <div class="faq-item__title">
+                            <div class="faq-item__num"><span>02</span></div>
+                        <!-- /.faq-item__num -->
                             <span class="faq-item__title--big">Нет должного
                                 управления проектом</span> 
                             <!-- /.faq-item__title--big -->
@@ -1280,8 +1288,7 @@
                         </div>
                             
                         <!-- /.faq-item__title -->
-                        <div class="faq-item__num"><span>02</span></div>
-                        <!-- /.faq-item__num -->
+                        
                         <div class="faq-item__text">
                             Мы внимательны к заказчикам, поэтому работа
 не заканчивается на моменте отгрузки —  наши специалисты ведут авторский надзор вплоть
@@ -1295,6 +1302,8 @@
 
                     <div class="faq-item">
                         <div class="faq-item__title">
+                            <div class="faq-item__num"><span>03</span></div>
+                        <!-- /.faq-item__num -->
                             <span class="faq-item__title--big">Нет достаточных компетенций
                                 технических специалистов
                                 заказчика для оценки различий
@@ -1305,8 +1314,7 @@
                         </div>
                             
                         <!-- /.faq-item__title -->
-                        <div class="faq-item__num"><span>03</span></div>
-                        <!-- /.faq-item__num -->
+                        
                         <div class="faq-item__text">
                             Мы доказали свою экспертность. Опыт и компетенции наших сотрудников позволяют решать сложные технические задачи, предвидеть и предотвратить возможные трудности при монтаже фасада. 
 <br><br>
@@ -1319,6 +1327,8 @@
 
                     <div class="faq-item">
                         <div class="faq-item__title">
+                            <div class="faq-item__num"><span>04</span></div>
+                        <!-- /.faq-item__num -->
                             <span class="faq-item__title--big">Отсутствие достаточной
                                 нормативно-технической
                                 документации</span> 
@@ -1328,8 +1338,7 @@
                         </div>
                             
                         <!-- /.faq-item__title -->
-                        <div class="faq-item__num"><span>04</span></div>
-                        <!-- /.faq-item__num -->
+                        
                         <div class="faq-item__text">Мы участвуем в инспекции и разработке нормативно-технической документации, переводим DIN и ISO, вносим предложения
                             по освоению и гармонизации наших
                             и европейских норм. </div>
@@ -1339,6 +1348,8 @@
 
                     <div class="faq-item">
                         <div class="faq-item__title">
+                            <div class="faq-item__num"><span>05</span></div>
+                        <!-- /.faq-item__num -->
                             <span class="faq-item__title--big">Несоответствие планируемого
                                 бюджета финальным суммам</span> 
                             <!-- /.faq-item__title--big -->
@@ -1347,8 +1358,7 @@
                         </div>
                             
                         <!-- /.faq-item__title -->
-                        <div class="faq-item__num"><span>05</span></div>
-                        <!-- /.faq-item__num -->
+                        
                         <div class="faq-item__text">Наш принцип - прозрачность в  финансовых вопросах с заказчиками. Да, многие говорят:
                             «Мы дешевле!», - мы же предоставляем детальный расчёт всего проекта и подтверждаем озвученные цифры
                             </div>
@@ -1365,7 +1375,7 @@
     </section>
     <!-- /.faq -->
 
-    <section class="contacts" id="contacts">
+    <section class="contacts lazy" id="contacts" data-src="assets/img/contacts/contacts-bg-min-min.png">
         <div class="container">
             <div class="contacts-inner">
                 <div class="section-title contacts-title">Контакты</div>
@@ -1465,14 +1475,19 @@
                 <!-- /.popup-form__title -->
                 <form action="mailer/smart.php" class="popup-form" method="POST">
                     <div class="popup-form__title">Написать нам</div>
-                    <input type="text" class="feedback-form__input popup-form__input" name="name" placeholder="Ваше имя" required></input>
-                    <input type="tel" class="feedback-form__input popup-form__input" name="phone" placeholder="Ваш телефон" required></input>
+                    <input type="text" class="feedback-form__input popup-form__input" name="name" placeholder="Ваше имя" required>
+                    <input type="tel" class="feedback-form__input popup-form__input" name="phone" placeholder="Ваш телефон" required>
                     <textarea class="feedback-form__input popup-form__textarea" name="comment" placeholder="Ваш вопрос" required></textarea>
                     <!-- /.popup-form__input -->
                     <button type="submit" class="btn popup-form__btn">Отправить</button>
                     <!-- /.popup-form__btn -->
                 </form>
                 <!-- /.main-form -->
+
+                <div class="form--success">
+                    <img src="" alt="">
+                    <p>Спасибо за заявку. С вами скоро свяжутся</p>
+                </div>
             
         </div>
     
@@ -1695,10 +1710,17 @@ $('a[href^="#"]').click(function (){
     });
 
     
-    $('.technical-point').click(function () {
-        $(this).siblings('.technical-popup').fadeIn();
+    $('.technical-point-link').click(function(){
+        var target = $(this).attr('data-link');
+        $('.'+ target).fadeIn();
         $('.header').addClass('out');
-      });
+
+    });
+
+    // $('.technical-point').click(function () {
+    //     $(this).siblings('.technical-popup').fadeIn();
+    //     $('.header').addClass('out');
+    //   });
 </script>
 
 <!-- скрипт появления шапки при скролле вверх и исчезновения при скроле вниз -->
@@ -1719,6 +1741,7 @@ $(window).scroll(function() {
 	}
 	scrollPrev = scrolled;
 });
+ 
 </script>
 
 <script>
@@ -1776,5 +1799,56 @@ $(window).scroll(function() {
     });
   });
 </script>
+
+<!-- Обработка запроса формы -->
+<script>
+    $(document).ready(function() { // вся мaгия пoслe зaгрузки стрaницы
+      $("form").submit(function(){ // пeрeхвaтывaeм всe при сoбытии oтпрaвки
+        var form = $(this); // зaпишeм фoрму, чтoбы пoтoм нe былo прoблeм с this
+        var error = false; // прeдвaритeльнo oшибoк нeт
+        form.find('input, textarea').each( function(){ // прoбeжим пo кaждoму пoлю в фoрмe
+          if ($(this).val() == '') { // eсли нaхoдим пустoe
+            
+            alert('Зaпoлнитe пoлe "'+$(this).attr('placeholder')+'"!'); // гoвoрим зaпoлняй!
+            // this.setCustomValidity('Wow');
+            error = true; // oшибкa
+          }
+        });
+        if (!error) { // eсли oшибки нeт
+          var data = form.serialize(); // пoдгoтaвливaeм дaнныe
+          $.ajax({ // инициaлизируeм ajax зaпрoс
+             type: 'POST', // oтпрaвляeм в POST фoрмaтe, мoжнo GET
+             url: 'mailer/smart.php', // путь дo oбрaбoтчикa, у нaс oн лeжит в тoй жe пaпкe
+             dataType: 'html', // oтвeт ждeм в json фoрмaтe
+             data: data, // дaнныe для oтпрaвки
+               beforeSend: function(data) { // сoбытиe дo oтпрaвки
+                    form.find('input[type="submit"], button[type="submit"]').attr('disabled', 'disabled'); // нaпримeр, oтключим кнoпку, чтoбы нe жaли  пo 100 рaз
+                  },
+               success: function(data){ // сoбытиe пoслe удaчнoгo oбрaщeния к сeрвeру и пoлучeния oтвeтa
+                  if (data['error']) { // eсли oбрaбoтчик вeрнул oшибку
+                    alert(data['error']); // пoкaжeм eё тeкст
+                  } else { // eсли всe прoшлo oк
+                   $('.popup-form').hide();
+                    $('.form--succes').show();
+                    alert('Спасибо за заявку. С вами скоро свяжутся');
+                  }
+                 },
+               error: function (xhr, ajaxOptions, thrownError) { // в случae нeудaчнoгo зaвeршeния зaпрoсa к сeрвeру
+                    alert(xhr.status); // пoкaжeм oтвeт сeрвeрa
+                    alert(thrownError); // и тeкст oшибки
+                 },
+               complete: function(data) { // сoбытиe пoслe любoгo исхoдa
+                    form.find('input[type="submit"], button[type="submit"]').prop('disabled', false);
+                    $('form').trigger( 'reset' ); // в любoм случae включим кнoпку oбрaтнo
+                 }
+                          
+               });
+        }
+        return false; // вырубaeм стaндaртную oтпрaвку фoрмы
+      });
+    });
+
+  </script>
+
 </body>
 </html>

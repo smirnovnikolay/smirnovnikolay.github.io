@@ -465,6 +465,12 @@
 }
 
 @media (max-width: 576px) {
+    .company-people__title {
+        font-size: 20rem;
+    }
+    .company-text {
+        font-size: 16rem;
+    }
     .footer-inner {
         padding: 18px 0;
     }

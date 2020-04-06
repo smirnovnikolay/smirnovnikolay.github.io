@@ -286,9 +286,13 @@
     .technical-bubble {
         top: 10px;
         left: 10px;
+        padding: 10px;
 
     }
     .technical-bubble:after {
+        content: none;
+    }
+    .technical-bubble:before {
         content: none;
     }
     .advantages {
@@ -336,7 +340,9 @@
         font-size: 30px;
     }
     .technical-inner {
-        height: 600px;
+        /* height: 600px; */
+        height: unset;
+        padding-top: 100%;
         position: relative;
     }
     
@@ -465,6 +471,12 @@
 }
 
 @media (max-width: 576px) {
+    .contacts-block__subtitle {
+        width: 120px;
+    }
+    .advantages-title:after {
+        content: none;
+    }
     .company-people__title {
         font-size: 20rem;
     }

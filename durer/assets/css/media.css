@@ -471,6 +471,11 @@
 }
 
 @media (max-width: 576px) {
+    .technical-point {
+        width: 30px;
+        height: 30px;
+        font-size: 14rem;
+    }
     .contacts-block__subtitle {
         width: 120px;
     }

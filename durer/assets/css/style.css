@@ -249,7 +249,7 @@ body {
         /* url(../img/main-house.png) center bottom no-repeat,  */
         /* url(../img/main-cloud.jpg) center no-repeat; */
     /* background: url(../img/main/main-img.jpg) center no-repeat; */
-    /* background-image: url(../img/main/main-img-min.jpg); */
+    background-image: url(../img/main/main-img-min.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -455,7 +455,7 @@ h1 {
     height: 4px;
     background-color: #ffc72c;
     position: absolute;
-    bottom: 15px;
+    bottom: 19px;
     transform: translateX(30px);
 }
 .advantages-content {
@@ -758,6 +758,7 @@ h1 {
     z-index: 1;
     max-width: 480px;
     height: 64px;
+    text-align: center;
 }
 
 .technical-popup__slider .owl-dots {
@@ -1867,6 +1868,7 @@ button {
     background-color: #ffffff;
     padding: 50px 40px;
     z-index: 10;
+    transition: all 0.3s;
 }
 .popup-form {
     display: flex;

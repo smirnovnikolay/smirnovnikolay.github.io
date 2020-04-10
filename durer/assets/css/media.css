@@ -23,8 +23,12 @@
 
 
 @media (max-width: 1200px) { 
+    .advantages-img {
+        min-width: 420px;
+        height: 250px;
+    }
     .advantages-img img {
-        max-width: 80%;
+       height: 100%;
     }
     .advantages-list {
         width: unset;
@@ -314,8 +318,8 @@
         padding-left: 0;
     }
     .advantages-img img {
-        transform: translateX(7%);
-        width: 50%;
+        transform: translateX(12%);
+       
     }
     .advantages-item__img img {
         width: 40px;
@@ -471,6 +475,13 @@
 }
 
 @media (max-width: 576px) {
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+        width: 30px;
+        height: 3px;
+    }
+    .header-logo {
+        width: 120px;
+    }
     .technical-point {
         width: 30px;
         height: 30px;
@@ -580,6 +591,8 @@
     }
     .advantages-img {
         margin-bottom: 35px;
+        min-width: unset;
+        height: 150px;
     }
     .feedback-form {
         padding-left: 30px;

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/css/animate.css">
    
     <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
-   
+    <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media.css">
     
@@ -25,9 +25,9 @@
 
 
 </head>
-<body>
+<body id="body">
     
-    <header class="header">
+    <header class="header" id="topMenu">
         <div class="header-top">
             <div class="container">
                 <div class="header-top__inner">
@@ -50,12 +50,12 @@
             </div>
         </div>
         <!-- add class is-active to nav for visible -->
-        <nav class="nav ">
+        <nav class="nav" >
             <div class="container">
                <div class="nav-inner">     
                     <ul class="nav-list">
                         <li class="nav-item">
-                            <a href="#main" class="nav-link" >Главная</a>
+                            <a href="#" class="nav-link" >Главная</a>
                         </li>
                         <li class="nav-item">
                             <a href="#advantages" class="nav-link" onclick="HeaderOut()">Преимущества</a>
@@ -88,30 +88,30 @@
         </nav> 
     </header>
 
-    <section class="main" id="main" >
+    <section class="main">
         <div class="main-bg" data-src="assets/img/main/main-img-min.jpg"></div>
         <!-- /.main-bg -->        
         <div class="container">
-            <h1 class="utp "><span class="utp--small">Уникальная запатентованная<br></span>фасадная система<br>крепления кирпича</h1>
+            <h1 class="utp " data-aos="zoom-in" ><span class="utp--small">Уникальная запатентованная<br></span>фасадная система<br>крепления кирпича</h1>
         </div>
         
     </section>
     <!-- /.main -->
 
-    <section class="slogan ">
+    <section class="slogan " data-aos="fade-up" >
         <div class="container">
             <div class="slogan-inner">
-                <div class="slogan-text"><span class="slogan-text--color">Мы</span> за качество и эстетику</div>
+                <div class="slogan-text"><span class="slogan-text--color">Мы</span> за качество и&nbsp;эстетику</div>
             </div>
         </div>      
     </section>
     <!-- /.slogan -->
 
-    <section class="about ">    
+    <section class="about " data-aos="fade-up" >    
             <div class="about-inner">
                 <div class="about-photo lazy" data-src="assets/img/about/about-photo-min.png"></div>
                 <div class="about-content lazy" data-src="assets/img/about/about-bg2-min.jpg">
-                    <div class="about-content__inner">
+                    <div class="about-content__inner " data-aos="fade-up" >
                     <!-- /.about-content__inner -->              
 
                         <div class="about-name">Дмитрий Меркин </div>
@@ -124,7 +124,7 @@
                         <!-- /.about-isay -->
                         <p class="about-text">
                             Кирпич&nbsp;&mdash; это красиво и&nbsp;основательно. Кирпичная кладка на&nbsp;фасадах современных зданий позволяет передать эстетический смысл архитектуры и&nbsp;создаёт комфортное городское пространство.<br><br>
-Я&nbsp;уверен&nbsp;&mdash; имитация кирпича не&nbsp;может быть лучше кирпича.<br><br>
+Я&nbsp;уверен&nbsp;&mdash; имитация кирпича не&nbsp;может быть лучше&nbsp;кирпича.<br><br>
 Мы&nbsp;любим свою страну и&nbsp;хотим жить в&nbsp;красивых городах. Поэтому несколько лет назад наша команда сконцентрировалась на&nbsp;работе в&nbsp;очень узком сегменте&nbsp;&mdash; разработке и&nbsp;производстве системы крепления фасадов клинкерного и&nbsp;керамического кирпича.<br><br> 
 Сейчас мы&nbsp;глубже всех разбираемся в&nbsp;особенностях кирпичных вентилируемых фасадов и&nbsp;профессионально умеем с&nbsp;ними работать.<br><br>
 Задача инжиниринговой команды D&Uuml;RER спроектировать фасад так, чтобы реализовать вашу архитектурную идею самым выгодным и&nbsp;удобным способом.
@@ -134,7 +134,7 @@
                     </div>
                 </div>
                 <div class="about-bubble">Смотреть видео</div>
-                <a class="about-video" data-fancybox href="https://www.youtube.com/watch?v=EUizTA1nrfA"></a>
+                <a class="about-video" data-fancybox href="https://www.youtube.com/watch?v=EUizTA1nrfA" ></a>
             </div>
             <!-- /.about-inner -->    
     </section>
@@ -143,8 +143,8 @@
     <section class="advantages " id="advantages">
         <div class="container">
             <div class="advantages-inner">
-                <div class="advantages-block ">
-                    <h2 class="advantages-title"><span class="advantages-title--number">1</span> Надёжность в эксплуатации</h2>
+                <div class="advantages-block "  data-aos="fade-up" > 
+                    <h2 class="advantages-title"><span class="advantages-title--number">1</span> Надёжность в&nbsp;эксплуатации</h2>
                     <!-- /.advantages-title -->
                     <div class="advantages-content">
                         <div class="advantages-img"><img class="lazy" data-src="assets/img/advantages/advantages-img-1-min.png" alt="Надёжность в эксплуатации"></div>
@@ -190,7 +190,7 @@
                 </div>
                 <!-- /.advantages-block -->
 
-                <div class="advantages-block ">
+                <div class="advantages-block "  data-aos="fade-up" >
                     <h2 class="advantages-title"><span class="advantages-title--number">2</span> Удобство монтажа</h2>
                     <!-- /.advantages-title -->
                     <div class="advantages-content">
@@ -233,7 +233,7 @@
                 </div>
                 <!-- /.advantages-block -->
 
-                <div class="advantages-block ">
+                <div class="advantages-block "  data-aos="fade-up" >
                     <h2 class="advantages-title"><span class="advantages-title--number">3</span> Отсутствие допрасходов</h2>
                     <!-- /.advantages-title -->
                    <div class="advantages-content">
@@ -285,12 +285,12 @@
     <!-- /.advantages -->
 
 
-    <section class="technical" id="technical">
+    <section class="technical" id="technical" data-aos="fade-up" >
         <div class="container">
-            <div class="technical-title ">Технические решения на системе D&Uuml;RER ФК</div>
+            <div class="technical-title ">Технические решения на&nbsp;системе D&Uuml;RER ФК</div>
         </div> 
-        <div class="technical-wrapper lazy " data-src="assets/img/technical/technical-bg-house-min.jpg">
-            <div class="container">
+        <div class="technical-wrapper lazy " data-src="assets/img/technical/house_corr-min.jpg"> 
+            <div class="technical-container">
                 <div class="technical-inner">
                     <div class="technical-bubble">Нажмите на цифру, чтобы<br>
                         увидеть реализацию решения</div>
@@ -614,7 +614,7 @@
                                         </div>
                                         <!-- /.technical-popup__title -->
                                     </div>
-                                    <div class="technical-popup__item">
+                                    <div class="technical-popup__item" id="technical-popup--8-2">
                                         <div class="technical-popup__number"> <span>8.2</span>   </div>
                                     <!-- /.technical-popup__number -->
                                         <div class="technical-popup__img">
@@ -850,21 +850,21 @@
                         <!-- /.technical-list__subtitle -->
                         <div class="technical-list__block">
                             <div class="technical-list__item">
-                                <div class="technical-list__img technical-point-link" data-link="technical-popup--6"><img class="lazy" data-src="assets/img/technical/min/technical-img-06.1-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--6" data-slider-start-number="1"><img class="lazy" data-src="assets/img/technical/min/technical-img-06.1-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Верхний узел примыкания к&nbsp;оконному проёму</div>
                                 <!-- /.technical-list__name -->
                             </div>
                             <!-- /.technical-list__item -->
                             <div class="technical-list__item">
-                                <div class="technical-list__img technical-point-link" data-link="technical-popup--7"><img class="lazy" data-src="assets/img/technical/min/technical-img-07.1-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--7" data-slider-start-number="1"><img class="lazy" data-src="assets/img/technical/min/technical-img-07.1-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Нижний узел примыкания к&nbsp;оконному проёму</div>
                                 <!-- /.technical-list__name -->
                             </div>
                             <!-- /.technical-list__item -->
                             <div class="technical-list__item">
-                                <div class="technical-list__img technical-point-link" data-link="technical-popup--8"><img class="lazy" data-src="assets/img/technical/min/technical-img-08.1-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--8" data-slider-start-number="1"><img class="lazy" data-src="assets/img/technical/min/technical-img-08.1-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Боковой узел примыкания к&nbsp;оконному проёму</div>
                                 <!-- /.technical-list__name -->
@@ -876,21 +876,21 @@
                         <!-- /.technical-list__subtitle -->
                         <div class="technical-list__block">
                             <div class="technical-list__item">
-                                <div class="technical-list__img technical-point-link" data-link="technical-popup--6"><img class="lazy" data-src="assets/img/technical/min/technical-img-06.2-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--6" data-slider-start-number="2"><img class="lazy" data-src="assets/img/technical/min/technical-img-06.2-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Верхний узел примыкания к&nbsp;оконному проёму</div>
                                 <!-- /.technical-list__name -->
                             </div>
                             <!-- /.technical-list__item -->
                             <div class="technical-list__item">
-                                <div class="technical-list__img technical-point-link" data-link="technical-popup--7"><img class="lazy" data-src="assets/img/technical/min/technical-img-07.2-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--7" data-slider-start-number="2"><img class="lazy" data-src="assets/img/technical/min/technical-img-07.2-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Нижний узел примыкания к&nbsp;оконному проёму</div>
                                 <!-- /.technical-list__name -->
                             </div>
                             <!-- /.technical-list__item -->
                             <div class="technical-list__item">
-                                <div class="technical-list__img technical-point-link" data-link="technical-popup--8"><img class="lazy" data-src="assets/img/technical/min/technical-img-08.2-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--8" data-slider-start-number="2"><img class="lazy" data-src="assets/img/technical/min/technical-img-08.2-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Боковой узел примыкания к&nbsp;оконному проёму</div>
                                 <!-- /.technical-list__name -->
@@ -902,21 +902,21 @@
                         <!-- /.technical-list__subtitle -->
                         <div class="technical-list__block">
                             <div class="technical-list__item">
-                                <div class="technical-list__img technical-point-link" data-link="technical-popup--6"><img class="lazy" data-src="assets/img/technical/min/technical-img-06.3-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--6" data-slider-start-number="3"><img class="lazy" data-src="assets/img/technical/min/technical-img-06.3-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Верхний узел примыкания к&nbsp;оконному проёму</div>
                                 <!-- /.technical-list__name -->
                             </div>
                             <!-- /.technical-list__item -->
                             <div class="technical-list__item">
-                                <div class="technical-list__img technical-point-link" data-link="technical-popup--7"><img class="lazy" data-src="assets/img/technical/min/technical-img-07.3-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--7" data-slider-start-number="3"><img class="lazy" data-src="assets/img/technical/min/technical-img-07.3-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Нижний узел примыкания к&nbsp;оконному проёму</div>
                                 <!-- /.technical-list__name -->
                             </div>
                             <!-- /.technical-list__item -->
                             <div class="technical-list__item">
-                                <div class="technical-list__img technical-point-link" data-link="technical-popup--8"><img class="lazy" data-src="assets/img/technical/min/technical-img-08.3-min.png" alt=""></div>
+                                <div class="technical-list__img technical-point-link" data-link="technical-popup--8" data-slider-start-number="3"><img class="lazy" data-src="assets/img/technical/min/technical-img-08.3-min.png" alt=""></div>
                                 <!-- /.technical-list__img -->
                                 <div class="technical-list__name">Боковой узел примыкания к&nbsp;оконному проёму</div>
                                 <!-- /.technical-list__name -->
@@ -962,7 +962,7 @@
        
     </section>
     <!-- /.technical -->
-    <section class="portfolio " id="portfolio">
+    <section class="portfolio " id="portfolio" data-aos="fade-up" >
         <div class="container">
             <div class="section-title portfolio-title">Реализованные проекты</div>
             <!-- /.portfolio-title -->
@@ -1122,7 +1122,7 @@
     </section>
     <!-- /.portfolio -->
 
-    <section class="documents lazy " id="documents" data-src="assets/img/documents/documents-bg-min.jpg">
+    <section class="documents lazy " id="documents" data-src="assets/img/documents/documents-bg-min.jpg" data-aos="fade-up">
         <div class="container">
             <div class="documents-title section-title">Разрешительная документация</div>
             <!-- /.documents-title -->
@@ -1150,12 +1150,12 @@
     </section>
     <!-- /.documents -->
 
-    <section class="cooperation " id="cooperation">
+    <section class="cooperation " id="cooperation" data-aos="fade-up" >
         <div class="container">
             <div class="cooperation-inner">
                 <div class="cooperation-block">
                     <div class="cooperation-title">Этапы<br>сотрудничества</div>
-                    <div class="cooperation-item cooperation-item--1">
+                    <div class="cooperation-item cooperation-item--1 " >
                         <div class="cooperation-item__img"><img class="lazy" data-src="assets/img/cooperation/cooperation-item-img-01.png" alt=""></div>
                         <!-- /.cooperation-item__img -->
                         <div class="cooperation-item__name">1. Консультация о возможности<br>применения системы<br>на вашем объекте</div>
@@ -1226,14 +1226,14 @@
     </section>
     <!-- /.cooperation -->
 
-    <section class="company " id="company">
+    <section class="company " id="company" data-aos="fade-up" >
         <div class="container">
             <div class="company-inner">
                 <div class="company-title section-title">О компании</div>
                 <!-- /.company-title -->
                 <p class="company-text"><b>Мы&nbsp;эксперты в&nbsp;области стали, покрытий и&nbsp;инжиниринга.</b> Мы&nbsp;объединяем инновационные решения из&nbsp;разных отраслей промышленности для создания качественно новых инженерных продуктов. Наша специализация&nbsp;&mdash; трансфер технологий из&nbsp;одной отрасли в&nbsp;другую: из&nbsp;автомобильной в&nbsp;строительную, из&nbsp;ветроэнергетики в&nbsp;судостроение.</p>                <!-- /.company-text -->
                 <div class="company-img">
-                    <div class="company-img__item lazy" data-src="assets/img/company/company-img-01-min.jpg">
+                    <div class="company-img__item lazy" data-src="assets/img/company/company-img-01-min.jpg" data-aos="fade-up" >
                         <div class="company-img__img">
                             <!-- <img class="lazy" data-src="assets/img/company/company-img-01-min.jpg" alt=""> -->
                         </div>
@@ -1243,7 +1243,7 @@
                         <!-- /.company-img__text -->
                     </div>
                     <!-- /.company-img__item -->  
-                    <div class="company-img__item lazy" data-src="assets/img/company/company-img-02-min.jpg">
+                    <div class="company-img__item lazy" data-src="assets/img/company/company-img-02-min.jpg" data-aos="fade-up" >
                         <div class="company-img__img">
                             <!-- <img class="lazy" data-src="assets/img/company/company-img-02-min.jpg" alt=""> -->
                         </div>
@@ -1256,7 +1256,7 @@
                         <!-- /.company-img__text -->
                     </div>
                     <!-- /.company-img__item -->   
-                    <div class="company-img__item lazy" data-src="assets/img/company/company-img-03-min.jpg">
+                    <div class="company-img__item lazy" data-src="assets/img/company/company-img-03-min.jpg" data-aos="fade-up" >
                         <div class="company-img__img">
                             <!-- <img class="lazy" data-src="assets/img/company/company-img-03-min.jpg" alt=""> -->
                         </div>
@@ -1270,29 +1270,29 @@
                     <!-- /.company-img__item -->      
                 </div>
                 <!-- /.company-img -->
-                <p class="company-text"><b>DELTA MKS</b> — система цинк-ламельных покрытий, которую используют для нанесения на крепёж в автомобильной индустрии. Мы же первые в мире применили это покрытие в строительной сфере — для замены нержавеющей стали в контакте с алюминием.
+                <p class="company-text" data-aos="fade-up" ><b>DELTA MKS</b> — система цинк-ламельных покрытий, которую используют для нанесения на крепёж в автомобильной индустрии. Мы&nbsp;же&nbsp;первые в мире применили это покрытие в строительной сфере — для замены нержавеющей стали в контакте с алюминием.
                     <br><br>
                     <b>D&Uuml;RER ФК</b> единственная в стране и в мире аттестованная система цинк-ламельных покрытий, применяемых для производства фасадных конструкций.
                 </p>
                 <!-- /.company-text -->
-                <div class="company-slider owl-carousel owl-theme">
+                <div class="company-slider owl-carousel owl-theme" data-aos="fade-up" >
                     <img class="lazy" data-src="assets/img/company/company-photo-01-min.jpg" alt="" data-dot="1">
                     <img class="lazy" data-src="assets/img/company/company-photo-02-min.jpg" alt="" data-dot="2">
                     <img class="lazy" data-src="assets/img/company/company-photo-03-min.jpg" alt="" data-dot="3">
                 </div>
                 <!-- /.company-slider -->
-                <p class="company-advantage">
-                    D&Uuml;RER ФК&nbsp;&mdash; единственная в&nbsp;стране и&nbsp;в&nbsp;мире аттестованная стальная система с&nbsp;цинк-ламельным покрытием для крепления кирпичных фасадов.                </p>
+                <p class="company-advantage" data-aos="fade-up" >
+                    D&Uuml;RER ФК&nbsp;&mdash; единственная в&nbsp;стране и&nbsp;в&nbsp;мире аттестованная стальная система с&nbsp;цинк-ламельным покрытием для&nbsp;крепления кирпичных фасадов.                </p>
                 <!-- /.company-advantage -->
-                <div class="company-people">
-                    <div class="company-people__title">НАШИ СОТРУДНИКИ – НАША ГОРДОСТЬ</div>
+                <div class="company-people" data-aos="fade-up" >
+                    <div class="company-people__title">НАШИ СОТРУДНИКИ – НАША&nbsp;ГОРДОСТЬ</div>
                     <!-- /.company-people__title -->
                     <div class="company-people__img"></div>
                     <!-- /.company-people__img -->
                 </div>
                 <!-- /.company-people -->
-                <p class="company-text">
-                    Создание востребованных инженерных продуктов требует особых качеств от&nbsp;конструкторов: высокий интеллект, талант и&nbsp;любовь к&nbsp;своему делу, ответственность и&nbsp;глубокое знание строительной сферы, постоянный анализ опыта европейских объектов и&nbsp;понимание особенностей российских строительных реалий. Вот почему мы&nbsp;делаем продукт, которым по-настоящему гордимся&nbsp;&mdash; систему крепления кирпичных фасадов D&Uuml;RER ФК.
+                <p class="company-text" data-aos="fade-up" >
+                    Создание востребованных инженерных продуктов требует особых качеств от&nbsp;конструкторов: высокий&nbsp;интеллект, талант и&nbsp;любовь к&nbsp;своему делу, ответственность и&nbsp;глубокое знание строительной сферы, постоянный анализ опыта европейских объектов и&nbsp;понимание особенностей российских строительных реалий. Вот почему мы&nbsp;делаем продукт, которым по-настоящему гордимся&nbsp;&mdash; систему крепления кирпичных фасадов D&Uuml;RER ФК.
 <br><br>
 Только истинные профессионалы способны оценить, как наши конструкторы находят элегантные решения задач, которые раньше никто не&nbsp;воплощал.  </p>
                 <!-- /.company-text -->
@@ -1303,7 +1303,7 @@
     </section>
     <!-- /.company -->
 
-    <section class="feedback lazy "  id="feedback" data-src="assets/img/feedback/feedback-bg-min.jpg">
+    <section class="feedback lazy "  id="feedback" data-src="assets/img/feedback/feedback-bg-min.jpg" data-aos="fade-up" >
         <div class="container">
             <div class="feedback-inner">
                 <div class="feedback-content">
@@ -1316,6 +1316,7 @@
                             <div class="feedback-form__title">Написать нам:</div>
                             <!-- /.feedback-form__title -->
                             <input type="text" class="feedback-form__input feedback-form__name" placeholder="Как вас зовут?" name="name">
+                            
                             <input id="phone2" type="tel" class="feedback-form__input feedback-form__tel" placeholder="Ваш телефон" name="phone">
                             <button class="btn feedback-form__button "><span>Получить расчёт</span></button>
                             <!-- /.feedback-form__button -->
@@ -1345,7 +1346,7 @@
     </section>
     <!-- /.feedback -->
 
-    <section class="faq " id="faq">
+    <section class="faq " id="faq" data-aos="fade-up">
         <div class="container">
         <div class="faq-title">Знакомы&nbsp;ли вам <span>проблемы</span>,<br>
         с&nbsp;которыми <span>сталкиваются</span> многие <span>заказчики</span>?</div>
@@ -1416,7 +1417,7 @@
         <div class="faq-item__text">
         Мы&nbsp;доказали свою экспертность. Опыт и&nbsp;компетенции наших сотрудников позволяют решать сложные технические задачи, предвидеть и&nbsp;предотвратить возможные трудности при монтаже фасада. 
         <br><br>
-        Конструкция D&Uuml;RER ФК&nbsp;проста и&nbsp;удобна в&nbsp;монтаже&nbsp;&mdash; минимум комплектующих на&nbsp;1&nbsp;м&sup2; фасада. Это облегчает и&nbsp;ускоряет работу проектировщиков и&nbsp;строителей.
+        Конструкция D&Uuml;RER ФК&nbsp;проста и&nbsp;удобна в&nbsp;монтаже&nbsp;&mdash; минимум комплектующих на&nbsp;1&nbsp;м&sup2; фасада. Это облегчает и&nbsp;ускоряет работу проектировщиков&nbsp;и&nbsp;строителей.
         
         </div>
         <!-- /.faq-item__text -->
@@ -1439,7 +1440,7 @@
         
         <div class="faq-item__text">Мы&nbsp;участвуем в&nbsp;инспекции и&nbsp;разработке нормативно-технической документации, переводим DIN и&nbsp;ISO, вносим предложения
         по&nbsp;освоению и&nbsp;гармонизации наших
-        и&nbsp;европейских норм. </div>
+        и&nbsp;европейских&nbsp;норм. </div>
         <!-- /.faq-item__text -->
         </div>
         <!-- /.faq-item -->
@@ -1458,7 +1459,7 @@
         <!-- /.faq-item__title -->
         
         <div class="faq-item__text">Наш принцип&nbsp;&mdash; прозрачность в&nbsp;финансовых вопросах с&nbsp;заказчиками. Да, многие говорят:
-        &laquo;Мы&nbsp;дешевле!&raquo;,&nbsp;&mdash; мы&nbsp;же предоставляем детальный расчёт всего проекта и&nbsp;подтверждаем озвученные цифры.
+        &laquo;Мы&nbsp;дешевле!&raquo;,&nbsp;&mdash; мы&nbsp;же предоставляем детальный&nbsp;расчёт всего проекта и&nbsp;подтверждаем озвученные&nbsp;цифры.
         </div>
         <!-- /.faq-item__text -->
         </div>
@@ -1473,7 +1474,7 @@
         </section>
         <!-- /.faq -->
 
-    <section class="contacts lazy " id="contacts" data-src="assets/img/contacts/contacts-bg-min-min.png">
+    <section class="contacts lazy " id="contacts" data-src="assets/img/contacts/contacts-bg-min-min.png" data-aos="fade-up" >
         <div class="container">
             <div class="contacts-inner">
                 <div class="section-title contacts-title">Контакты</div>
@@ -1512,7 +1513,7 @@
     </section>
     <!-- /.contacts -->
 
-    <section class="what ">
+    <section class="what " data-aos="fade-up" >
         <div class="container">
             <div class="what-inner">
                 <div class="section-title what-title ">Знаете, что это?</div>
@@ -1554,7 +1555,7 @@
     </section>
     <!-- /.what -->
 
-    <footer class="footer ">
+    <footer class="footer">
         <div class="container">
             <div class="footer-inner">
                 <a href="http://www.duerer.ru/" class="footer-logo">
@@ -1572,22 +1573,26 @@
     </footer>
     <!-- /.footer -->
 
-    <div class="overlay">
+    <div class="overlay" >
 
         <div class="popup-close popup-close__bg"></div>
         
         <div class="popup ">
-       
+            <div class="technical-popup__close"><img class="lazy" alt="close" src="assets/img/interface/technocal-close.svg"></div>
                 <!-- /.popup-form__title -->
                 <form action="mailer/smart.php" class="popup-form" method="POST">
                     <div class="popup-form__title">Написать нам</div>
                     <input type="text" class="feedback-form__input popup-form__input" name="name" placeholder="Ваше имя">
                     <input id="phone1" type="tel" class="feedback-form__input popup-form__input" name="phone" placeholder="Ваш телефон">
                     <textarea class="feedback-form__input popup-form__textarea" name="comment" placeholder="Ваш вопрос"></textarea>
+                    
+                    <a class="link-download" href="assets/Oprosny_list.docx" download>Скачать "Опросный лист.docx"</a>      
+                    <input type="file" name="file" id="dfile" class="inputfile" data-multiple-caption="{count} files selected" multiple />
+                    <label for="dfile" class="feedback-form__input popup-form__input feedback-form__label "><span>Загрузить файл</span> </label>
+                                  
                     <!-- /.popup-form__input -->
                     <button type="submit" class="btn popup-form__btn">Отправить</button>
-                    <!-- /.popup-form__btn -->
-                    
+                    <!-- /.popup-form__btn -->                    
                 </form>
                 <!-- /.main-form -->
                 <div class="form--success">
@@ -1608,10 +1613,12 @@
       <!-- /.overlay -->
 
     <script src="assets/js/jquery.min.js"></script>
- 
-    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/aos.js"></script>
     <script>
-        new WOW().init();
+        AOS.init({
+            duration: 1000
+        });
+        
     </script>
 
     <script type="text/javascript" src="assets/js/jquery.lazy.min.js"></script>
@@ -1656,6 +1663,7 @@
 
 <!-- OwlCarousel -->
 <script>
+    
     $('.portfolio-content').owlCarousel({
         loop:false,
         nav:true,
@@ -1674,8 +1682,8 @@
             }
         }
     })    
-
-    $('.technical-popup__slider').owlCarousel({
+    var owlTech = $(".technical-popup__slider");
+    owlTech.owlCarousel({
         loop:false,
         nav:true,
         dots: true,
@@ -1803,6 +1811,7 @@
      // On click
      technicalButton.addEventListener("click", function() {
       // Toggle class "is-active"
+      
       technicalButton.classList.toggle("is-active");
       if ( technicalButton.innerHTML == "Развернуть список") {
         technicalButton.innerHTML = "Свернуть список";
@@ -1812,6 +1821,7 @@
       
       technicalList.classList.toggle("is-active");
       // Do something else, like open/close menu
+      AOS.refresh();
     });
  </script>
 
@@ -1845,6 +1855,12 @@ $('a[href^="#"]').click(function (){
     
     $('.technical-point-link').click(function(){
         var target = $(this).attr('data-link');
+        var sliderNumber = $(this).attr('data-slider-start-number');
+        if (sliderNumber != null) {
+            owlTech.trigger('to.owl.carousel', sliderNumber-1, 0);
+            console.log(sliderNumber);
+        }
+       
         $('.'+ target).fadeIn();
         $('.header').addClass('out');
 
@@ -1862,9 +1878,25 @@ $('a[href^="#"]').click(function (){
 	scrollPrev = 0;
     var flag = true;
 $(window).scroll(function() {
-	var scrolled = $(window).scrollTop();
- 
-	if ( scrolled > 500 && scrolled > scrollPrev) {
+    var scrolled = $(window).scrollTop();
+    if (document.documentElement.clientWidth > 992) {
+        if ( scrolled <= 80) {
+            header.css('top',-scrolled);
+            
+        }  else {
+            header.css('top','-80px');
+        }
+    } else {
+        header.css('top','0');
+    }
+    
+
+    if ( scrolled > 150) {
+        header.addClass('scroll');
+    } else {
+        header.removeClass('scroll');
+    }
+	if ( scrolled > 150 && scrolled > scrollPrev) {
         header.addClass('out');
 
         // Если меню открыто и страница скролица вниз, вместо с исчезновением хедера закрывается и меню
@@ -2003,6 +2035,25 @@ $(window).scroll(function() {
       });
     });
 
+  </script>
+
+  <script>
+    var inputs = document.querySelectorAll('#dfile');
+    Array.prototype.forEach.call(inputs, function(input){
+    var label	 = input.nextElementSibling,
+        labelVal = label.innerHTML;
+    input.addEventListener('change', function(e){
+        var fileName = '';
+        if( this.files && this.files.length > 1 )
+        fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+        else
+        fileName = e.target.value.split( '\\' ).pop();
+            if( fileName )
+        label.querySelector( 'span' ).innerHTML = fileName;
+        else
+        label.innerHTML = labelVal;
+        });
+    });
   </script>
 
 </body>

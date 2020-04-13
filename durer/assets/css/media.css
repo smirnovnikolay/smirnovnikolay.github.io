@@ -13,16 +13,19 @@
     .container{
         max-width: 960px;        
     } 
+   
  }
 @media (min-width: 1200px) { 
     .container{
         max-width: 1120px;        
     } 
+   
  }
 /* --- конец---- */
 
 
 @media (max-width: 1200px) { 
+    
     .advantages-img {
         min-width: 420px;
         height: 250px;
@@ -41,7 +44,7 @@
         padding-left: 280px;
     }
     .technical-inner {
-        height: 950px;
+        /* height: 950px; */
         position: relative;
     }
     .nav-link {
@@ -50,6 +53,10 @@
 }
  
 @media (max-width: 992px) { 
+
+    .utp {
+        font-size: 56rem;
+    }
     .about-bubble {
         display: none;
     }
@@ -165,8 +172,14 @@
     }
     /* technical */
     .technical-inner {
-        height: 700px;
+        /* height: 700px; */
+        height: 80vw;
         position: relative;
+        margin: 0 -30%;
+    }
+    .technical-bubble {
+        top: 4%;
+        left: 20%;
     }
     .technical-list__item {
         flex-basis: 50%;
@@ -287,9 +300,21 @@
 }
 
 @media (max-width: 768px) { 
+    .technical-popup__item {
+        width: 500px;
+        /* height: 500px; */
+    }
+    .technical-popup__inner {
+        max-width: 500px;
+        min-width: 500px;
+        /* height: 500px; */
+    }
+    .technical-inner {
+        margin: 0 -35%;
+    }
     .technical-bubble {
-        top: 10px;
-        left: 10px;
+        
+        left: 22%;
         padding: 10px;
 
     }
@@ -344,9 +369,9 @@
         font-size: 30px;
     }
     .technical-inner {
-        /* height: 600px; */
-        height: unset;
-        padding-top: 100%;
+        height: 100vw;
+        /* height: unset; */
+        /* padding-top: 100%; */
         position: relative;
     }
     
@@ -475,6 +500,13 @@
 }
 
 @media (max-width: 576px) {
+    .technical-popup__slider .owl-dots {
+        bottom: 70px;
+    }
+    .technical-popup__item {
+        width: 100%;
+        /* height: 450px; */
+    }
     .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
         width: 30px;
         height: 3px;
@@ -497,7 +529,7 @@
         font-size: 20rem;
     }
     .company-text {
-        font-size: 16rem;
+        font-size: 17rem;
     }
     .footer-inner {
         padding: 18px 0;

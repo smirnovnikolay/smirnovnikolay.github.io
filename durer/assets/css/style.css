@@ -1,3 +1,5 @@
+
+
 *, *:active, *:focus, *:visited{
 	outline:0 none !important;
 }
@@ -74,7 +76,10 @@ body {
 }
 .header.scroll {
     -webkit-transition: transform .5s ease;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
     transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease;
 }
 
 /* ---------------------------------------- */
@@ -146,7 +151,9 @@ body {
   left: calc(100% + 50px);
   -webkit-transition: 1s;
   transition: 1s;
+  
 }
+
 /* .btn:hover:after{
     left: calc(100% + 50px);
     transition: 1s 0.2s;
@@ -439,7 +446,8 @@ h1 {
     cursor: pointer;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    animation: fadeIn 1.4s ease 2s forwards, pulse 2s ease-in-out 0.4s infinite;
+    -webkit-animation: fadeIn 1.4s ease 2s forwards, pulse 2s ease-in-out 0.4s infinite;
+            animation: fadeIn 1.4s ease 2s forwards, pulse 2s ease-in-out 0.4s infinite;
 }
 .about-video:hover {
     -webkit-transform: translate(-50%,-50%) scale(0.8);
@@ -794,7 +802,7 @@ h1 {
             flex-direction: column;
     -webkit-box-pack: justify;
             justify-content: space-between;
-    max-height: 600px;
+    height: 600px;
     width: 600px;
 }
 .technical-popup__img {
@@ -1045,6 +1053,8 @@ h1 {
 }
 .portfolio-item__img {
     margin-bottom: 23px;
+    width: 285px;
+    height: 285px;
 }
 .portfolio-item__name {
     color: #ffc72c;
@@ -2020,6 +2030,9 @@ button {
 .footer-logo {
     width: 174px;
 }
+.footer-youtube {
+    width: 45px;
+}
 .overlay {
     position: fixed;
     top: 0;
@@ -2296,8 +2309,10 @@ button {
   }
 
   .feedback-form__label {
+      display: -webkit-box;
       display: flex;
-      align-items: center;
+      -webkit-box-align: center;
+              align-items: center;
   }
   #dfile {
 	width: 0.1px;
@@ -2322,9 +2337,12 @@ button {
     right: 0;
     bottom: 0;
     z-index: 3;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     height: 100%;
     padding: 0 20px;
     /* line-height: 1.5; */
@@ -2338,7 +2356,7 @@ button {
 	outline: -webkit-focus-ring-color auto 5px;
 }
 
-.link-download{
+.link-download {
     font-size: 16rem;
     color: blue;
     border-bottom: 1px dashed;
@@ -2370,7 +2388,7 @@ button {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
   }
-
+/* анимация пульсации кнопки play */
   @-webkit-keyframes pulse {
     from {
       -webkit-transform: translate(-50%,-50%) scale3d(calc(1 * var(--size-play)), calc(1 * var(--size-play)), calc(1 * var(--size-play)));
@@ -2409,3 +2427,53 @@ button {
     -webkit-animation-name: pulse;
     animation-name: pulse;
   }
+
+/* Только необходимые стили AOS анимации для умеьшения размера файлов */
+body[data-aos-duration="1000"] [data-aos], [data-aos][data-aos][data-aos-duration="1000"] {
+    -webkit-transition-duration: 1000ms;
+            transition-duration: 1000ms;
+}
+body[data-aos-delay="1000"] [data-aos], [data-aos][data-aos][data-aos-delay="1000"] {
+    -webkit-transition-delay: 0;
+            transition-delay: 0;
+}
+body[data-aos-delay="1000"] [data-aos].aos-animate, [data-aos][data-aos][data-aos-delay="1000"].aos-animate {
+    -webkit-transition-delay: 1000ms;
+            transition-delay: 1000ms;
+}
+/** * Fade animations: * fade * fade-up, fade-down, fade-left, fade-right * fade-up-right, fade-up-left, fade-down-right, fade-down-left */
+[data-aos^='fade'][data-aos^='fade'] {
+    opacity: 0;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: opacity, transform;
+    transition-property: opacity, transform, -webkit-transform;
+}
+[data-aos^='fade'][data-aos^='fade'].aos-animate {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+[data-aos='fade-up'] {
+    -webkit-transform: translate3d(0, 100px, 0);
+            transform: translate3d(0, 100px, 0);
+}
+/* анимация zoom */
+[data-aos^='zoom'][data-aos^='zoom'] {
+    opacity: 0;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: opacity, transform;
+    transition-property: opacity, transform, -webkit-transform;
+}
+[data-aos^='zoom'][data-aos^='zoom'].aos-animate {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+            transform: translate3d(0, 0, 0) scale(1);
+}
+[data-aos='zoom-in'] {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+}
+
+/* подключаем мобильные стили */
